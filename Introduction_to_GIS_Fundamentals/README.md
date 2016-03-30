@@ -4,6 +4,8 @@ Slides are available [here](http://www.datapolitan.com/DOT_GIS/Introduction_to_G
 
 ##Outline for the Class
 
+![img](images/IMG_7776.jpg)
+
 + Why map?
 + What is GIS?
 + Orientation to QGIS
@@ -25,4 +27,25 @@ Slides are available [here](http://www.datapolitan.com/DOT_GIS/Introduction_to_G
 		+ SRIDs
 	+ Using Print Composer to create a map
 + Lunch
-+ 
++ Recap of morning session
+	+ What did you learn this morning?
++ Applying lessons
+	+ Reproject data
+	+ Geoprocessing
+		+ clipping
+		+ buffering
+		+ advanced filtering
+	+ Styling data
+		+ symbology
+		+ readability
+		+ use of gradients
+	+ Presentations
+		+ Task to participants: Upload a PDF map to the provided URL and discuss your map in class
++ Final topics
+	+ Raster data
+	+ Data sources
+	+ Other data types (KML, GeoJSON)
+	+ QGIS vs ArcGIS
+	+ Plugins
+	+ Edit attribute table
++ Resources
