@@ -98,6 +98,9 @@ img[alt=img-center-60]{
 img[alt=img-center-80]{
   width:80%;
 }
+img[alt=img-center-100]{
+  width:100%;
+}
 img[alt=Creative-Commons-License]{
   width:10%;
   float:right;
