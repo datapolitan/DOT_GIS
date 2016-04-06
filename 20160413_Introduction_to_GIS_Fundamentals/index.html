@@ -45,34 +45,141 @@ class: center,middle
 #What is GIS?    
 
 ---
+        
+#Types of Maps   
 
-#Basic Operations in QGIS
+--
++ Physical or Reference
 
 --
+        
++ Thematic
+--
+        
++ Choropleth
+--
 
-+ Make a basic map
---
-        
-+ Add a shapefile layer with points
---
-        
-+ Query and filter by attributes
---
-        
-+ Apply basic styling
-        
++ Cartogram     
+              
 ---
 
-#Getting Oriented to QGIS
-                    
+#Basic Map Elements - POINTS
+        
+![img-center-60](images/point_feature.PNG)
+        
+
+---
+
+#Basic Map Elements - LINES
+        
+![img-center-60](images/polyline_feature.PNG)
+        
+
+---
+
+#Basic Map Elements - POLYGONS
+        
+![img-center-60](images/polygon_feature.PNG)
+        
+
 ---
 
 #Shapefiles
-![img-center-medium](images/shapefile.pictclipping)
+--
+        
++ Basic file for storing map elements
+--
+
++ Stores spatial data, like points, lines, and polygons
+--
+
++ Multiple files comprise a "shapefile":
+--
+![img-center-80](images/shapefile.PNG)
+
 
 ---
+
+#Ok, so let's make a basic map
+--
         
++ Open the shapefile containing NYC Boroughs:
+--
+
+![img-90](images/add_shapefile.PNG)        
+
+
+---
+
+##the result:  
+![img-full](images/add_shapefile_boroughs.PNG)        
+
+
+---
+
+#Orientation to QGIS - NAVIGATION
+--
         
+##Menu Bar 
+--
+
+![img-full](images/menubar.PNG)
+
+
+---
+
+#Orientation to QGIS - NAVIGATION
+--
+        
+##Side Bar 
+--
+![img-right](images/sidebar.PNG)
+
+
+---
+
+#Orientation to QGIS - ATTRIBUTE TABLE
+--
+        
+##Open attribute table:
+--
+![img-full](images/open_attribute_tbl.PNG)
+
+
+---
+
+##attribute table:
+
+![img-full](images/layer_attribute_table.PNG)
+
+
+---
+
+#Basic Operations in QGIS - STYLING
+--
+        
+##Style by Category:
+--
+        
+![img-90](images/properties_style.PNG)
+
+        
+---
+
+##select the column that has the data you want to style:
+--
+    
+![img-full](images/style_features_categ.PNG)
+
+
+---
+
+##the result:
+--
+![img](images/style_features_categ2.PNG)
+
+
+---
         
 #More Operations in QGIS
 --
@@ -87,7 +194,8 @@ class: center,middle
 --
         
 + Introduction to file structure
-        
+  
+
 ---
         
 #Creating a better map
