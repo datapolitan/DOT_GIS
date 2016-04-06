@@ -23,6 +23,9 @@ img {
 img[alt=img-full] {
   width:100%;
 }
+img[alt=img-90] {
+  width:90%;
+}
 img[alt=img-left]{
   width:45%;
   float:left;
@@ -84,6 +87,9 @@ img[alt=img-center-45]{
 }
 img[alt=img-center-50]{
   width:50%;
+}
+img[alt=img-center-60]{
+  width:60%;
 }
 img[alt=img-center-80]{
   width:80%;
