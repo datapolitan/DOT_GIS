@@ -31,6 +31,10 @@ img[alt=img-left-40]{
   width:40%;
   float:left;
 }
+img[alt=img-left-20]{
+  width:20%;
+  float:left;
+}
 img[alt=img-right]{
   width:45%;
   float:right;
