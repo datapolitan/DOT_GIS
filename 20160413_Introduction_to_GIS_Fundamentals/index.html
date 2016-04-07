@@ -357,42 +357,92 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
         
-#More Operations in QGIS
+#Filter and Query
 --
-        
-+ Select by location
---
-        
-+ Select by attribute
---
-        
-+ Export data
---
-        
-+ Introduction to file structure
-  
 
----
-        
-#Creating a better map
+##Look through the attribute table to see what you have to work with:
 --
-        
-+ Adding base maps in QGIS
---
-        
-+ Working with CSV data in QGIS
---
-        
-. Projections
---
-        
-. SRIDs
---
-        
-+ Using Print Composer to create a map
+
+## /add image of the attribute table/
+
 
 ---
 
+##Select by attribute involves building an expression based on available elements: 
+--
+
+##Open the Query Builder:
+--
+
+![img-full](images/filtering_data.png)
+
+---
+
+##Use the Query Builder to build an expression:
+--
+
+class:center
+##Build the query:  
+--
+
+##“Complaint Type” 
+--
+
+##=
+--
+
+##‘Broken Muni Meter’
+--
+
+###note double quotes and single quotes, importance of syntax
+
+---
+
+##field + operator + value = expression
+--
+
+![img-center-50](images/filtering_data_query.png)
+--
+
+###Test the query
+--
+
+###Click OK
+
+
+---
+
+class:center
+##The number of features affected is returned:
+--
+
+![img-full](images/filtering_data_expression_response.png)
+
+---
+
+##Click OK, and you get the results:
+--
+
+![img](images/filtering_data_results.png)
+
+
+---
+
+#Exporting Data
+--
+
+##Once you have the results, you can export them to a new layer:
+--
+      
+##/add image of Save As .../
+--
+
+###Save your file in a logical directory with your other data files!
+
+---
+
+
+---
 class:center,middle
 #LUNCH
 ![img-left-40](images/disappointment_cove.png)
@@ -401,7 +451,52 @@ class:center,middle
 <div style="clear: both;"></div>
 
 ###Source: https://www.instagram.com/sadtopographies/
-      
+
+---
+        
+#Goals for Afternoon
+
+---
+
+
+#Creating a better map
+--
+        
+##Adding base maps
+--
+
+
+---
+        
+#Working with CSV data
+--
+        
+##Projections
+--
+        
+##SRIDs
+    
+
+---
+
+#Geoprocessing
+--
+
++ Clipping
+--
+
++ Buffering
+--
+
+
+---
+
+#Using Print Composer to create a map
+
+
+---
+
+
         
 ---
         
