@@ -116,6 +116,13 @@ class:center,middle
 
 ---
 
+#Area Cartogram – Electoral Votes by State
+![img-center-60](images/Cartogram_US.png)
+#####Source: http://training.fws.gov/courses/csp/csp7203/resources/Types_of_Maps_2013.pdf 
+
+
+---
+
 class:center,middle
 #Basic Map Elements
 
@@ -123,25 +130,25 @@ class:center,middle
 
 #Points
         
-![img-center-60](images/point_feature.PNG)
+![img-center-60](images/point_feature.png)
         
 
 ---
 
 #Lines
         
-![img-center-60](images/polyline_feature.PNG)
+![img-center-60](images/polyline_feature.png)
         
 
 ---
 
 #Polygons
         
-![img-center-60](images/polygon_feature.PNG)
+![img-center-60](images/polygon_feature.png)
 
 ---
 
-#
+#Spatial Information
 ![img](images/spatial_example.png)
 
 ---
@@ -252,8 +259,26 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 + Multiple files comprise a "shapefile":
 --
-![img-center-80](images/shapefile.PNG)
+![img-center-80](images/shapefile.png)
 
+---
+
+# Shapefiles
+
++ One geometry type per shapefile
+--
+
++ So sometimes you end up with this:
+![img-center-80](images/shapefile-one-geometry-per-file.png)
+
+---
+
+# Shapefiles
+
++ Column names can only be ten characters long
+--
+
+![img-center-100](images/shapefile-column-names.png)
 
 ---
 
@@ -263,13 +288,13 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 + Open the shapefile containing NYC Boroughs:
 --
 
-![img-90](images/add_shapefile.PNG)        
+![img-90](images/add_shapefile.png)        
 
 
 ---
 
 ##the result:  
-![img-full](images/add_shapefile_boroughs.PNG)        
+![img-full](images/add_shapefile_boroughs.png)        
 
 
 ---
@@ -280,7 +305,7 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 ##Menu Bar 
 --
 
-![img-full](images/menubar.PNG)
+![img-full](images/menubar.png)
 
 
 ---
@@ -290,7 +315,7 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
         
 ##Side Bar 
 --
-![img-right](images/sidebar.PNG)
+![img-right](images/sidebar.png)
 
 
 ---
@@ -300,14 +325,14 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
         
 ##Open attribute table:
 --
-![img-full](images/open_attribute_tbl.PNG)
+![img-full](images/open_attribute_tbl.png)
 
 
 ---
 
 ##attribute table:
 
-![img-full](images/layer_attribute_table.PNG)
+![img-full](images/layer_attribute_table.png)
 
 
 ---
@@ -318,7 +343,7 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 ##Style by Category:
 --
         
-![img-90](images/properties_style.PNG)
+![img-90](images/properties_style.png)
 
         
 ---
@@ -326,7 +351,7 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 ##select the column that has the data you want to style:
 --
     
-![img-full](images/style_features_categ.PNG)
+![img-full](images/style_features_categ.png)
 
 ---
 
@@ -336,7 +361,7 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ##the result:
 --
-![img](images/style_features_categ2.PNG)
+![img](images/style_features_categ2.png)
 
 ---
 
@@ -358,49 +383,146 @@ class: center,middle
 
 ---
         
-#More Operations in QGIS
+#Filter and Query
 --
-        
-+ Select by location
+
+##Look through the attribute table to see what you have to work with:
 --
-        
-+ Select by attribute
+
+## /add image of the attribute table/
+
+
+---
+
+##Select by attribute involves building an expression based on available elements: 
 --
-        
-+ Export data
+
+##Open the Query Builder:
 --
-        
-+ Introduction to file structure
-  
+
+![img-full](images/filtering_data.png)
+
+---
+
+##Use the Query Builder to build an expression:
+--
+
+class:center
+##Build the query:  
+--
+
+##“Complaint Type” 
+--
+
+##=
+--
+
+##‘Broken Muni Meter’
+--
+
+###note double quotes and single quotes, importance of syntax
+
+---
+
+##field + operator + value = expression
+--
+
+![img-center-50](images/filtering_data_query.png)
+--
+
+###Test the query
+--
+
+###Click OK
+
+
+---
+
+class:center
+##The number of features affected is returned:
+--
+
+![img-full](images/filtering_data_expression_response.png)
+
+---
+
+##Click OK, and you get the results:
+--
+
+![img](images/filtering_data_results.png)
+
+
+---
+
+#Exporting Data
+--
+
+##Once you have the results, you can export them to a new layer:
+--
+      
+##/add image of Save As .../
+--
+
+###Save your file in a logical directory with your other data files!
+
+---
+
+
+---
+class:center,middle
+#LUNCH
+![img-left-40](images/disappointment_cove.png)
+![img-right-40](images/agony_island.png)
+
+<div style="clear: both;"></div>
+
+###Source: https://www.instagram.com/sadtopographies/
 
 ---
         
+#Goals for Afternoon
+
+---
+
+
 #Creating a better map
 --
         
-+ Adding base maps in QGIS
+##Adding base maps
+--
+
+
+---
+        
+#Working with CSV data
 --
         
-+ Working with CSV data in QGIS
+##Projections
 --
         
-. Projections
---
-        
-. SRIDs
---
-        
-+ Using Print Composer to create a map
+##SRIDs
+    
 
 ---
 
-class:center,middle
-#LUNCH
-![img-left-40](images/disappointment_cove.PNG)
-![img-right-40](images/agony_island.PNG)
+#Geoprocessing
+--
 
-###Source: https://www.instagram.com/sadtopographies/
-      
++ Clipping
+--
+
++ Buffering
+--
+
+
+---
+
+#Using Print Composer to create a map
+
+
+---
+
+
         
 ---
         
