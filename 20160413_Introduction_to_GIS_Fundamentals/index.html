@@ -470,6 +470,131 @@ class:center
 
 ---
 
+# Projections
+
+--
+
+## No one's favorite part of GIS
+
+--
+
+## But a necessary part of it nonetheless
+
+---
+
+# Projections
+
+--
+
+## Convert points on Earth (**latitude** and **longitude**) to x and y coordinates
+
+--
+
+## But a necessary part of it nonetheless
+
+---
+
+# Projections
+
+## Allow maps to move from 3D space (Earth) to 2D space (eg, a piece of paper)
+
+--
+
+![img-center-85](images/projections-orange.jpg)
+
+[Digital Coast Geozone](https://geozoneblog.wordpress.com/2012/05/22/happy-birthday-mercator/)
+
+---
+
+# Every projection distorts some part of your map
+
+![img-center-50](images/projections-faces.png)
+
+[FlowingData](http://flowingdata.com/2014/01/13/map-projections-illustrated-with-a-face/)
+
+---
+
+# Mercator
+
+## A common map projection
+
+--
+
+![img-center-50](images/mercator.gif)
+
+---
+
+# Mercator makes geometries near the poles look bigger than geometries near the equator
+
+--
+
+![img-center-70](images/projections-mercator-puzzle.png)
+
+[Mercator Puzzle Redux](http://bramus.github.io/mercator-puzzle-redux/)
+
+---
+
+# These circles are all the same size on the globe:
+
+![img-center-50](images/projections-tissot-mercator.png)
+
+[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+
+---
+
+# As are these:
+
+![img-center-60](images/projections-tissot-mollweide.png)
+
+[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+
+---
+
+# And these:
+
+![img-center-60](images/projections-tissot-oblique-mercator.png)
+
+[Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
+
+---
+
+# Projections
+
+## For the most part we will work in **WGS 84** (latitude and longitude).
+
+--
+
+## If we need to calculate area or do anything else where we want to talk about **feet** or **meters** we will use a local projection (in NYC this is called **State Plane Long Island**).
+
+---
+
+# Projections have unique IDs that make it easier to talk about them
+
+--
+
+## WGS 84 is referred to as **EPSG:4326**
+
+--
+
+## State Plane Long Island is referred to as **EPSG:2263**
+
+--
+
+## Remember these two and you should be set
+
+---
+
+# Projections
+
+## When you want a layer to be in a different projection than it is currently in, you need to **Save As** and pick the new projection
+
+---
+
+# Save As
+
+![img-center-60](images/projections-layer-save-as.png)
+
+---
 
 ---
 class:center,middle
