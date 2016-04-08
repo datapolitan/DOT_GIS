@@ -272,7 +272,7 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 --
 
 + So sometimes you end up with this:
-![img-center-80](images/shapefile-one-geometry-per-file.png)
+![img](images/shapefile-one-geometry-per-file.png)
 
 ---
 
@@ -288,7 +288,15 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 #Ok, so let's make a basic map
 --
         
-+ Open the shapefile containing NYC Boroughs:
+##On the Side Bar - "Open Shapefile": 
+--
+
+![img-right](images/sidebar.png)
+
+
+---
+        
+##Open the shapefile containing NYC Boroughs:
 --
 
 ![img-90](images/add_shapefile.png)        
@@ -302,10 +310,10 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
 
-#Orientation to QGIS - NAVIGATION
+#Orientation to QGIS - NAVIGATION 
 --
         
-##Menu Bar 
+##Menu Bar:
 --
 
 ![img-full](images/menubar.png)
@@ -313,22 +321,12 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
 
-#Orientation to QGIS - NAVIGATION
---
-        
-##Side Bar 
---
-![img-right](images/sidebar.png)
-
-
----
-
 #Orientation to QGIS - ATTRIBUTE TABLE
 --
         
-##Open attribute table:
+##Right-click on the layer to open the attribute table:
 --
-![img-full](images/open_attribute_tbl.png)
+![img-90](images/open_attribute_tbl.png)
 
 
 ---
@@ -342,8 +340,14 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 #Basic Operations in QGIS - STYLING
 --
-        
+
 ##Style by Category:
+--
+        
++ Again, right-click and select the Properties option
+--
+
++ Select "Style," and finally, choose "Categorized":
 --
         
 ![img-90](images/properties_style.png)
@@ -351,14 +355,10 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
         
 ---
 
-##select the column that has the data you want to style:
++ Select the column that has the data you want to style:
 --
     
 ![img-full](images/style_features_categ.png)
-
----
-
-#Add labels to data
 
 ---
 
@@ -368,8 +368,31 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
 
-class: center,middle
+#Add labels to data
+--
+
++ From Properties, select "Labels"
+--
+
++ Select the column that has the data you want to use for labels:
+--
+
+![img-full](images/labels.png)
+
+
+---
+
+##the result:
+--
+![img](images/labels_result.png)
+
+---
+
+class: center, middle
 #5 Min Break
+![img-center-60](images/disappointment_cove.png)
+
+###Source: https://www.instagram.com/sadtopographies/
 
 ---
 
@@ -378,9 +401,12 @@ class: center,middle
 
 ---
 
-#Adding 311 Service Requests
+#Adding on Layers
+--
 
-<!-- add 311 shapefile -->
+##Add the 311 Service Request shapefile to the project
+
+<!-- add image of 311 shapefile added - points -->
 
 
 
@@ -400,18 +426,17 @@ class: center,middle
 ##Select by attribute involves building an expression based on available elements: 
 --
 
-##Open the Query Builder:
++ Right-click on the layer and select "Filter" to open the Query Builder:
 --
 
 ![img-full](images/filtering_data.png)
 
 ---
 
-##Use the Query Builder to build an expression:
++ Use the Query Builder to build an expression based on what you learned in the attribute table
 --
 
-class:center
-##Build the query:  
++ field + operator + value = expression
 --
 
 ##“Complaint Type” 
@@ -425,31 +450,30 @@ class:center
 
 ###note double quotes and single quotes, importance of syntax
 
----
-
-##field + operator + value = expression
---
-
-![img-center-50](images/filtering_data_query.png)
---
-
-###Test the query
---
-
-###Click OK
-
 
 ---
 
-class:center
-##The number of features affected is returned:
++ Build the query in the Query Builder dialog:
+
+![img-center-60](images/filtering_data_query.png)
+--
+
++ Test the query
+--
+
++ Click OK
+
+
+---
+
++ The number of features affected is returned:
 --
 
 ![img-full](images/filtering_data_expression_response.png)
 
 ---
 
-##Click OK, and you get the results:
++ Click OK, and the results are returned:
 --
 
 ![img](images/filtering_data_results.png)
@@ -464,6 +488,10 @@ class:center
 --
       
 ##/add image of Save As .../
+
+##improve on this:
+
+![img-center-60](images/projections-layer-save-as.png)
 --
 
 ###Save your file in a logical directory with your other data files!
@@ -471,26 +499,16 @@ class:center
 ---
 
 # Projections
-
 --
 
 ## No one's favorite part of GIS
-
 --
 
 ## But a necessary part of it nonetheless
-
----
-
-# Projections
-
 --
 
 ## Convert points on Earth (**latitude** and **longitude**) to x and y coordinates
 
---
-
-## But a necessary part of it nonetheless
 
 ---
 
@@ -514,21 +532,18 @@ class:center
 
 ---
 
-# Mercator
-
-## A common map projection
-
+# Mercator - a common map projection
 --
 
-![img-center-50](images/mercator.gif)
+![img-center-60](images/mercator.gif)
 
 ---
 
-# Mercator makes geometries near the poles look bigger than geometries near the equator
+# Mercator makes geometries near poles look bigger than geometries near the equator
 
 --
 
-![img-center-70](images/projections-mercator-puzzle.png)
+![img-center-80](images/projections-mercator-puzzle.png)
 
 [Mercator Puzzle Redux](http://bramus.github.io/mercator-puzzle-redux/)
 
@@ -560,11 +575,11 @@ class:center
 
 # Projections
 
-## For the most part we will work in **WGS 84** (latitude and longitude).
+## For the most part we will work in **WGS 84** (latitude and longitude)
 
 --
 
-## If we need to calculate area or do anything else where we want to talk about **feet** or **meters** we will use a local projection (in NYC this is called **State Plane Long Island**).
+## But if we need to calculate area or do anything else where we want to talk about **feet** or **meters** we will use a local projection (in NYC this is called **State Plane Long Island**).
 
 ---
 
@@ -572,11 +587,11 @@ class:center
 
 --
 
-## WGS 84 is referred to as **EPSG:4326**
++ WGS 84 is referred to as **EPSG:4326**
 
 --
 
-## State Plane Long Island is referred to as **EPSG:2263**
++ State Plane Long Island is referred to as **EPSG:2263**
 
 --
 
@@ -586,15 +601,17 @@ class:center
 
 # Projections
 
-## When you want a layer to be in a different projection than it is currently in, you need to **Save As** and pick the new projection
+## When you want a layer to be in a different projection than it is currently in, you can re-project it
+--
 
----
++ Do a **Save As**:
+--
 
-# Save As
+![img-right-small](images/projections-layer-save-as.png)
+--
 
-![img-center-60](images/projections-layer-save-as.png)
++ and pick the new projection in the CRS field:
 
----
 
 ---
 class:center,middle
@@ -610,36 +627,104 @@ class:center,middle
         
 #Goals for Afternoon
 
----
-
-
-#Creating a better map
---
-        
-##Adding base maps
---
-
 
 ---
+
+#Enhancing Your Map
+--
         
+##Adding base maps will give your map context.
+--
+
+## In QGIS, you need a plugin to use base maps.
+
+
+---
+
++ From the Plugins menu, select "Manage and Install Plugins"
+--
+
+![img](images/basemap_plugin.png)
+--
+
++ Select the OpenLayers plugin and ensure it's enabled
+
+
+---
+
+##Now you can add a basemap
+--
+
++ Go to the "Web" menu and select "Google Maps"
+--
+
++ Select a type of Google basemap, such as Google Streets:
+--
+
+![img-center-80](images/basemap_plugin2.png)
+
+
+---
+
+##The basemap loaded:
+--
+
+![img-full](images/basemap.png)
+
+---
+
+##The basemap zoomed in:
+--
+
+![img-full](images/basemap_zoomed.png)
+
+
+---
+
 #Working with CSV data
 --
         
-##Projections
+##Sometimes we have data that's not a shapefile.  Commonly, this is stored in a .csv file
 --
-        
-##SRIDs
-    
+
+##As long as there is geometry in the dataset, you can load it into QGIS
+--
+
++ On the Side Bar - "Open Comma-Delimited File"
+--
+
++ Browse to the file and select it
+
 
 ---
 
-#Geoprocessing
+##You are prompted enter information about this file, notably:
 --
 
-+ Clipping
++ Which fields have the geography, and
 --
 
-+ Buffering
++ Which projection you want:
+--
+
+![img](images/import_CSV.png)
+--
+
++ Click OK and the data appears on your map
+
+
+---
+
+##Even though it's on your map, it's not a shapefile
+--
+
++ Do a Save As and select shapfiles as the type:
+--
+
+![img-center-60](images/save_csv_asSHP2.png)
+--
+
++ This creates a new shapefile, and adds it as a new layer to your map   
 
 
 ---
@@ -693,7 +778,7 @@ class:center,middle
 
 ---
 
-# On the right you can customize the items you add to the map
+# On the right, you can customize the items you add to the map
 
 ![img-center-50](images/print-composer-item-properties.png)
 
@@ -720,6 +805,107 @@ class:center,middle
 # Now you can share your map or print it
 
 ![img-full](images/print-composer-pdf.png)
+
+
+---
+
+#Getting More Analytical - Geoprocessing
+--
+
+##**Buffering** - Allows you to expand the area around your feature
+--
+
+##**Clipping** - Allows you to cut away what you don't need
+
+
+---
+
+##We'll do some geoprocessing on bike accidents, as they relate to bike lanes.   To review a bit:
+--
+
++ First, bring in the bike lanes shapefile
+--
+
++ Then, bring in the bike accidents .csv
+--
+
++ Convert this to a shapefile
+
+
+---
+
+class:center, middle
+##We want to capture bike accidents that happened outisde of bike lanes.   
+--
+
+##How might we go about this?
+
+
+---
+
+##First, we'll buffer
+--
+
++ Open buffer tool
+--
+
++  What is the input file?
+--
+
++ Distance
+--
+
++ Click OK - results?
+--
+
++ Save this as a new layer
+
+
+---
+
+class:center, middle
+##Now we want to get rid of all the accidents that don't intersect with the bike lanes. 
+--
+
+##How might we do this?
+
+
+---
+
+#Now, we'll clip
+--
+
++ Open clipping tool
+--
+
++ What is the input file and what is the processing file?
+--
+
++ Click OK - results?
+--
+
++ Save this as a new layer
+
+
+---
+
+#Your turn!
+--
+
+##Working in teams, create a scenario with this bike data, and do two things:
+--
+
++ Some type of geoprocessing, using clipping or buffering or both
+--
+
++ Don't forget about querying / filtering!
+--
+
++ Then you'll add some style to your results
+--
+
++ Finally, create an export using the Print Composer, to share with the class.
+
 
 ---
 
