@@ -27,12 +27,24 @@ img[alt=img-left-20]{
   width:20%;
   float:left;
 }
+img[alt=img-left-30]{
+  width:30%;
+  float:left;
+}
+img[alt=img-left-35]{
+  width:35%;
+  float:left;
+}
 img[alt=img-left-40]{
   width:40%;
   float:left;
 }
 img[alt=img-left-45]{
   width:45%;
+  float:left;
+}
+img[alt=img-left-50]{
+  width:50%;
   float:left;
 }
 img[alt=img-left-60]{
@@ -46,6 +58,10 @@ img[alt=img-left-bottom]{
 }
 img[alt=img-right-20]{
   width:20%;
+  float:right;
+}
+img[alt=img-right-30]{
+  width:30%;
   float:right;
 }
 img[alt=img-right-30-bottom]{
