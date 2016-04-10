@@ -724,7 +724,6 @@ class:center,middle
 
 ![img-center-40](images/projections_NYSplane.png)
 
-
 ---
 
 # Projections
@@ -794,27 +793,21 @@ class:center,middle
 
 ---
 
-# Re-Projecting Data
+#Selecting Points - Saving Selection
 
-+ When you want a layer to be in a different projection than it is currently in, you can re-project it
++ If we wanted to reproject the data into a different CRS, we could do that here
+--
+![img-center-60](images/reproject1.png)
 --
 
-+ Do a **Save As**:
---
-
-![img-right-40](images/projections-layer-save-as.png)
---
-
-+ and pick the new projection in the CRS field:
-
----
-
-# For more information on CRS and map projections: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html
++ Pick the new projection in the CRS field (like when we imported the CSV)
 
 ---
 
 #Your Turn
-
++ Create a new shapefile of just the 311 service requests in your borough
++ Outline the borough using the polygon selection
++ Save the shapefile to your desktop for us to use later
 
 ---
 class:center,middle
@@ -901,30 +894,7 @@ class: center,middle
 
 ---
 
-#Working with CSV data
---
-        
-##Sometimes we have data that's not a shapefile.  Commonly, this is stored in a .csv file.
---
 
-##As long as there is geometry in the dataset, you can load it into QGIS to render on your map.
---
-
-+ On the Side Bar - "Open Comma-Delimited File"
---
-
-+ Browse to the file and select it
-
-
----
-
-#You are prompted enter information about this file, notably:
---
-
-+ The type of file it is, and
---
-
-+ Which fields have the geography:
 --
 
 ![img-center-80](images/import_CSV.png)
@@ -1171,8 +1141,11 @@ class:center, middle
 ![img-center-30](images/qgis-map-design.png)
 
 [QGIS Map Design](http://locatepress.com/qmd)
-        
+
 ---
+
+#Projections
++ [QGIS online manual documentation](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html)
         
 #Thank You
 
