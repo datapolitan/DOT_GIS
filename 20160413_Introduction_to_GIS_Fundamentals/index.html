@@ -37,10 +37,10 @@ class: center,middle
 #Goals for the class 
 --
 
-+ Describe the foundational concepts of spatial analysis
++ Describe the foundational concepts of spatial analysis and mapmaking
 --
 
-+ Describe the general structure of Geographic Information Systems (GIS)
++ Describe the general structure and purpose of Geographic Information Systems (GIS)
 --
 
 + Describe spatial data formats and sources of spatial data
@@ -54,16 +54,28 @@ class: center,middle
 ---
 
 #Outcomes
-+ Understand the reasons for GIS and mapping
-+ Able to articulate the differences between open source and proprietary systems
-+ A concrete spatial project 
-+ Familiar with data formats and sources
-+ Aware of resources for further information
+--
+
++ You will be familiar with the foundational concepts in spatial analysis and mapmaking
+--
+
++ You will understand the structure and purpose of GIS
+--
+
++ You will be practiced in applying spaital concepts to real-world problems
+--
+
++ You will be familiar with the differences between open source and proprietary software applications
+--
+
++ You will be familiar with resources for further information on how to use QGIS for spatial analysis and mapmaking
 
 ---
 
 #Goals for this morning
-+ ...
++ Introduce basic concepts of spatial analysis and mapping
++ Introduce popular GIS and other spatial tools
++ 
 
 ---
 
@@ -98,7 +110,7 @@ class:center,middle
 ---
 
 class:center,middle
-![img-full](images/reference.png)
+![img-full](images/referencemap.png)
 
 ---
 
@@ -191,7 +203,11 @@ class:center,middle
 
 ---
 
+<<<<<<< HEAD
 #Basi c GIS Map
+=======
+#Basic Map Using QGIS
+>>>>>>> origin/gh-pages
 ![img](images/spatial_example.png)
 
 ---
@@ -202,33 +218,32 @@ class:center,middle
 
 ---
 
-#ArcGIS
+#[ArcGIS](http://www.esri.com/software/arcgis/arcgis-for-desktop)
 
 ![img-center-large](images/arcgis.jpg)
 [Source](http://www.esri.com/news/arcuser/1012/a-workflow-for-creating-and-sharing-maps.html)
 
 ---
 
-#Adobe Illustrator/Mapublisher
+#[Adobe Illustrator](http://www.adobe.com/products/illustrator.html)/[Mapublisher](http://www.avenza.com/mapublisher)
 ![img-full](images/illustrator.jpg)
 [Source](http://www.avenza.com/resources/blog/2011/06/28/how-get-open-street-map-data-adobe-illustrator-mapublisher)
 
 ---
 
-#Google Earth
+#[Google Earth](https://www.google.com/earth/)
 
 ![img-full](images/google_earth.png)
 
 ---
 
-#Google Fusion Tables
+#[Google Fusion Tables](https://sites.google.com/site/fusiontablestalks/stories)
 <iframe width="100%" height="430" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col54%2C+col55+from+1dNtdy7FuBBZ2qTxX7jgZ5Dig8n96oxRrWFjuhYpJ+where+col3+%3E%3D+0+and+col3+%3C%3D+4+and+col26+%3D+2+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=40.844685&amp;lng=-73.915349&amp;t=1&amp;z=12&amp;l=col54&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=26&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG"></iframe>
 Source: [NYC Open Data 311 Noise Complaints, 1 Jan - 20 May 2014, Between Midnight and 4 am in the Bronx](https://www.google.com/fusiontables/DataSource?docid=1dNtdy7FuBBZ2qTxX7jgZ5Dig8n96oxRrWFjuhYpJ#map:id=3)
 
 ---
 
 #Proprietary vs Open Source Software
-
 --
 
 + Proprietary software source code is owned by an individual or an organization and tightly restricted (usually for profit)
@@ -249,7 +264,6 @@ Source: [NYC Open Data 311 Noise Complaints, 1 Jan - 20 May 2014, Between Midnig
 ---
 
 #Proprietary vs Open Source Software
-
 --
 
 + Proprietary software is often available only by purchasing a license
@@ -281,148 +295,91 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 ---
 
 <!-- opening shapefile -->
-#Let's Open QGIS
-[Click this link](data/boros/boros.zip) and download the file
+#Let's Get Started
+1. [Click this link](data/boros/boros.zip) and download the file to your desktop
+2. Unzip the file
+3. Open QGIS
+
+![img-left-20](images/qgis_launch.png)
 
 ---
 
-#Shapefiles
---
-        
-+ Basic file for storing map elements
---
-
-+ Stores spatial data, like points, lines, and polygons
---
-
-+ Multiple files comprise a "shapefile":
---
-![img-center-80](images/shapefile.png)
+#QGIS Getting Started
+![img-full](images/qgis_nav1.png)
 
 ---
 
-# Shapefiles
-
-+ Have a few limitations
---
-
-+ One geometry type per shapefile
---
-
-+ So sometimes you end up with this:
-![img](images/shapefile-one-geometry-per-file.png)
+#QGIS Getting Started
+![img](images/qgis_nav2.png)
 
 ---
 
-# Shapefiles
+![img-center-60](images/qgis_nav3.png)
 
-+ Column names can only be ten characters long
---
-
-![img-center-100](images/shapefile-column-names.png)
+![img-center-70](images/qgis_nav4.png)
 
 ---
 
-#Ok, so let's make a basic map
---
-        
-##On the Side Bar - "Open Shapefile": 
---
-
-![img-right](images/sidebar.png)
-
-
----
-        
-##Open the shapefile containing NYC Boroughs:
---
-
-![img-90](images/add_shapefile.png)        
-
+#QGIS Getting Started
+![img-center-90](images/qgis_nav5.png)
 
 ---
 
-##the result:  
-![img-full](images/add_shapefile_boroughs.png)        
+#Attribute Table (Right click on layer)
+![img-center-90](images/qgis_nav6.png)
+---
 
+#Attribute Table
+![img](images/qgis_nav7.png)
 
 ---
 
-#Orientation to QGIS - NAVIGATION 
---
-        
-##Menu Bar:
---
-
-![img-full](images/menubar.png)
-
-
----
-
-#Orientation to QGIS - ATTRIBUTE TABLE
---
-        
-##Right-click on the layer to open the attribute table:
---
-![img-90](images/open_attribute_tbl.png)
-
-
----
-
-##attribute table:
-
-![img-full](images/layer_attribute_table.png)
-
-
----
-
-#Basic Operations in QGIS - STYLING
---
-
-##Style by Category:
---
-        
-+ Again, right-click and select the Properties option
---
-
+<!-- Styling -->
+#Styling Features
++ Right-click the layer and select the Properties option
 + Select "Style," and finally, choose "Categorized":
---
         
-![img-90](images/properties_style.png)
+![img-90](images/styling1.png)
 
-        
 ---
 
+#Styling Features
 + Select the column that has the data you want to style:
---
     
-![img-full](images/style_features_categ.png)
+![img-center-60](images/styling2.png)
+
+![img](images/styling3_box.png)
 
 ---
 
-##the result:
---
-![img](images/style_features_categ2.png)
+#Styling Features
+![img](images/styling4_box.png)
+
+---
+
+#Styling Features
+![img-center-90](images/styling5.png)
 
 ---
 
 #Add labels to data
---
++ From Properties, select "Labels", "Show labels for this layer"
 
-+ From Properties, select "Labels"
---
-
-+ Select the column that has the data you want to use for labels:
---
-
-![img-full](images/labels.png)
-
+![img-full](images/labeling1.png)
 
 ---
 
-##the result:
---
-![img](images/labels_result.png)
+#Add labels to data
++ Select the column that has the data you want to use for labels
+
+![img](images/labeling2.png)
+
++ Click "Apply", "Ok"
+
+---
+
+#Add labels to data
+![img-center-90](images/labeling3.png)
 
 
 ---
@@ -445,9 +402,14 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 class: center, middle
 #5 Min Break
+<<<<<<< HEAD
 ![img-center-60](images/disappointment_cove.png)
 
 ####Source: https://www.instagram.com/sadtopographies/
+=======
+![img-center-50](images/disappointment_cove.png)
+#####Source: https://www.instagram.com/sadtopographies/
+>>>>>>> origin/gh-pages
 
 ---
 
@@ -456,8 +418,9 @@ class: center, middle
 
 ---
 
-#Adding on Layers
+#Shapefiles
 --
+<<<<<<< HEAD
 
 ##Add the 311 Service Request shapefile to the project
 --
@@ -466,74 +429,130 @@ class: center, middle
 
 
 ---
+=======
+>>>>>>> origin/gh-pages
         
-#Filter and Query
++ Basic file for storing map elements
 --
 
+<<<<<<< HEAD
 ##Check out the attribute table:
 --
 
 ![img-center-80](images/311_attribute.png)
+=======
++ Stores spatial data, like points, lines, and polygons
+--
+
++ Multiple files comprise a "shapefile"
+
+--
+>>>>>>> origin/gh-pages
+
+![img-center-80](images/file_struct1.png)
+
+---
+
+# Shapefiles
+
++ Have a few limitations
+--
+
++ One geometry type (Point, Line, Polygon) per shapefile
+--
+
++ So sometimes you end up with this:
+![img](images/file_struct2.png)
+
+---
+
+# Shapefiles
+--
+
++ Column names can only be letters, numbers, and underscores "_"
+--
+
++ Column names can only be ten characters long
+
+--
+
+![img-center-100](images/shapefile-column-names.png)
 
 
 ---
 
-##Select by attribute involves building an expression based on available elements: 
---
-
-+ Right-click on the layer and select "Filter" to open the Query Builder:
---
-
-![img-full](images/filtering_data.png)
+class:center,middle
+#Let's add another layer
 
 ---
 
-+ Use the Query Builder to build an expression based on what you learned in the attribute table
---
-
-+ field + operator + value = expression
---
-
-##“Complaint Type” 
---
-
-##=
---
-
-##‘Broken Muni Meter’
---
-
-###note double quotes and single quotes, importance of syntax
-
-
----
-
+<<<<<<< HEAD
 + Let the Query Builder help you:
+=======
+#311 DOT Service Requests
++ [Download the data](data/dot-311/20160201_20160207_DOT_311_ServiceRequests.zip) to your desktop
++ Unzip the file
++ Open in QGIS
+>>>>>>> origin/gh-pages
 
-![img-center-60](images/filtering_data_query.png)
---
+![img-center-60](images/DOT_311_1.png)
+---
 
-+ Test the query
---
+#311 DOT Service Requests
 
-+ Click OK
+![img-full](images/DOT_311_2.png)
+
+
+
+---
+        
+#Filter and Query
++ We can filter the points based on the values in the attribute table
+
+---
+        
+#Filter and Query
++ Right-click on the layer and select "Filter" to open the Query Builder
+
+![img-center-90](images/filtering_data.png)
 
 
 ---
 
-+ The number of features affected is returned:
---
-
-![img-full](images/filtering_data_expression_response.png)
+#Filter and Query
+![img-center-60](images/filter1.png)
 
 ---
 
+<<<<<<< HEAD
 + Click OK, and the results are rendered on the map:
+=======
+#Filter and Query
+![img-left-60](images/filter2.png)
+>>>>>>> origin/gh-pages
 --
+![img-right-35](images/filter3.png)
 
+<<<<<<< HEAD
 ![img-full](images/broken_muni_meters.png)
+=======
+---
 
+#Filter and Query
+![img-center-60](images/filter4.png)
 
+---
+
+#Filter and Query
+![img-center-90](images/filter5.png)
+>>>>>>> origin/gh-pages
+
+<!-- stop editing -->
+
+---
+class:center
+#10 Min Break
+![img-center-50](images/unfortunate_cove.png)
 ---
 
 #Exporting Data
