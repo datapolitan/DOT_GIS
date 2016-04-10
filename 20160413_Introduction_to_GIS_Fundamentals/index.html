@@ -191,7 +191,7 @@ class:center,middle
 
 ---
 
-#Basic GIS Map
+#Basi c GIS Map
 ![img](images/spatial_example.png)
 
 ---
@@ -424,13 +424,30 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 --
 ![img](images/labels_result.png)
 
+
+---
+
+##You can use label placement to optimize where they display - e.g. to fix Manhattan:
+--
+
+![img-full](images\labels_placement.png)
+
+
+---
+
+##the new result:
+--
+
+![img-full](images/labels_placement2.png)
+
+
 ---
 
 class: center, middle
 #5 Min Break
 ![img-center-60](images/disappointment_cove.png)
 
-###Source: https://www.instagram.com/sadtopographies/
+####Source: https://www.instagram.com/sadtopographies/
 
 ---
 
@@ -443,9 +460,9 @@ class: center, middle
 --
 
 ##Add the 311 Service Request shapefile to the project
+--
 
-<!-- add image of 311 shapefile added - points -->
-
+![img-center-80](images/311_datapoints.png)
 
 
 ---
@@ -453,10 +470,10 @@ class: center, middle
 #Filter and Query
 --
 
-##Look through the attribute table to see what you have to work with:
+##Check out the attribute table:
 --
 
-## /add image of the attribute table/
+![img-center-80](images/311_attribute.png)
 
 
 ---
@@ -491,7 +508,7 @@ class: center, middle
 
 ---
 
-+ Build the query in the Query Builder dialog:
++ Let the Query Builder help you:
 
 ![img-center-60](images/filtering_data_query.png)
 --
@@ -511,10 +528,10 @@ class: center, middle
 
 ---
 
-+ Click OK, and the results are returned:
++ Click OK, and the results are rendered on the map:
 --
 
-![img](images/filtering_data_results.png)
+![img-full](images/broken_muni_meters.png)
 
 
 ---
@@ -522,14 +539,10 @@ class: center, middle
 #Exporting Data
 --
 
-##Once you have the results, you can export them to a new layer:
+##Export the results to a new layer using **Save As**:
 --
-      
-##/add image of Save As .../
 
-##improve on this:
-
-![img-center-60](images/projections-layer-save-as.png)
+![img-center-50](images/save_as.png)
 --
 
 ###Save your file in a logical directory with your other data files!
@@ -690,13 +703,21 @@ class:center,middle
 
 ---
 
+##As an alternatives, you can try Quick Map Services:
+--
+
+![img-center-80](images/quick_map_services.png)
+
+
+---
+
 ##Now you can add a basemap
 --
 
-+ Go to the "Web" menu and select "Google Maps"
++ Go to the "Web" menu and select one of these menus:
 --
 
-+ Select a type of Google basemap, such as Google Streets:
++ Select a type of basemap:
 --
 
 ![img-center-80](images/basemap_plugin2.png)
@@ -722,10 +743,10 @@ class:center,middle
 #Working with CSV data
 --
         
-##Sometimes we have data that's not a shapefile.  Commonly, this is stored in a .csv file
+##Sometimes we have data that's not a shapefile.  Commonly, this is stored in a .csv file.
 --
 
-##As long as there is geometry in the dataset, you can load it into QGIS
+##As long as there is geometry in the dataset, you can load it into QGIS to render on your map.
 --
 
 + On the Side Bar - "Open Comma-Delimited File"
@@ -739,16 +760,27 @@ class:center,middle
 ##You are prompted enter information about this file, notably:
 --
 
-+ Which fields have the geography, and
++ The type of file it is, and
 --
 
-+ Which projection you want:
++ Which fields have the geography:
 --
 
-![img](images/import_CSV.png)
+![img-center-80](images/import_CSV.png)
+
+
+---
+
++ Click OK and you are prompted to choose a projection:
 --
 
-+ Click OK and the data appears on your map
+![img-left-bottom](images/csv_projection_prompt.png)
+--
+
+![img-right-bottom](csv_projection_prompt.png)
+--
+
++ Click ok and the data appear on your map
 
 
 ---
@@ -756,7 +788,7 @@ class:center,middle
 ##Even though it's on your map, it's not a shapefile
 --
 
-+ Do a Save As and select shapfiles as the type:
++ Do a **Save As** and select shapfiles as the type:
 --
 
 ![img-center-60](images/save_csv_asSHP2.png)
@@ -884,10 +916,16 @@ class:center, middle
 ##First, we'll buffer
 --
 
-+ Open buffer tool
++ Open buffer tool:
 --
 
-+  What is the input file?
+![img](images/geoprocessig_menu.png)
+--
+
+![img-top](images/print-composer-pdf.png)
+--
+
++ What is the input file?
 --
 
 + Distance
