@@ -81,6 +81,10 @@ img[alt=img-right-bottom]{
   float:right;
   bottom:10px;
 }
+img[alt=img-top]{
+  width:50%;
+  top:10px;
+}
 img[alt=img-center]{
   width:60%;
 }

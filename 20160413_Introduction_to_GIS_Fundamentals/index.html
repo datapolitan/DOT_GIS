@@ -203,7 +203,11 @@ class:center,middle
 
 ---
 
+<<<<<<< HEAD
+#Basi c GIS Map
+=======
 #Basic Map Using QGIS
+>>>>>>> origin/gh-pages
 ![img](images/spatial_example.png)
 
 ---
@@ -377,6 +381,23 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 #Add labels to data
 ![img-center-90](images/labeling3.png)
 
+
+---
+
+##You can use label placement to optimize where they display - e.g. to fix Manhattan:
+--
+
+![img-full](images\labels_placement.png)
+
+
+---
+
+##the new result:
+--
+
+![img-full](images/labels_placement2.png)
+
+
 ---
 
 #Your turn
@@ -389,8 +410,14 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 class: center, middle
 #5 Min Break
+<<<<<<< HEAD
+![img-center-60](images/disappointment_cove.png)
+
+####Source: https://www.instagram.com/sadtopographies/
+=======
 ![img-center-50](images/disappointment_cove.png)
 #####Source: https://www.instagram.com/sadtopographies/
+>>>>>>> origin/gh-pages
 
 ---
 
@@ -401,16 +428,34 @@ class: center, middle
 
 #Shapefiles
 --
+<<<<<<< HEAD
+
+##Add the 311 Service Request shapefile to the project
+--
+
+![img-center-80](images/311_datapoints.png)
+
+
+---
+=======
+>>>>>>> origin/gh-pages
         
 + Basic file for storing map elements
 --
 
+<<<<<<< HEAD
+##Check out the attribute table:
+--
+
+![img-center-80](images/311_attribute.png)
+=======
 + Stores spatial data, like points, lines, and polygons
 --
 
 + Multiple files comprise a "shapefile"
 
 --
+>>>>>>> origin/gh-pages
 
 ![img-center-80](images/file_struct1.png)
 
@@ -482,10 +527,14 @@ class:center,middle
 
 ---
 
+<<<<<<< HEAD
++ Let the Query Builder help you:
+=======
 #311 DOT Service Requests
 + [Download the data](data/dot-311/20160201_20160207_DOT_311_ServiceRequests.zip) to your desktop
 + Unzip the file
 + Open in QGIS
+>>>>>>> origin/gh-pages
 
 ![img-center-60](images/DOT_311_1.png)
 ---
@@ -516,11 +565,18 @@ class:center,middle
 
 ---
 
+<<<<<<< HEAD
++ Click OK, and the results are rendered on the map:
+=======
 #Filter and Query
 ![img-left-60](images/filter2.png)
+>>>>>>> origin/gh-pages
 --
 ![img-right-35](images/filter3.png)
 
+<<<<<<< HEAD
+![img-full](images/broken_muni_meters.png)
+=======
 ---
 
 #Filter and Query
@@ -530,6 +586,7 @@ class:center,middle
 
 #Filter and Query
 ![img-center-90](images/filter5.png)
+>>>>>>> origin/gh-pages
 
 <!-- stop editing -->
 
@@ -542,14 +599,10 @@ class:center
 #Exporting Data
 --
 
-##Once you have the results, you can export them to a new layer:
+##Export the results to a new layer using **Save As**:
 --
-      
-##/add image of Save As .../
 
-##improve on this:
-
-![img-center-60](images/projections-layer-save-as.png)
+![img-center-50](images/save_as.png)
 --
 
 ###Save your file in a logical directory with your other data files!
@@ -710,13 +763,21 @@ class:center,middle
 
 ---
 
+##As an alternatives, you can try Quick Map Services:
+--
+
+![img-center-80](images/quick_map_services.png)
+
+
+---
+
 ##Now you can add a basemap
 --
 
-+ Go to the "Web" menu and select "Google Maps"
++ Go to the "Web" menu and select one of these menus:
 --
 
-+ Select a type of Google basemap, such as Google Streets:
++ Select a type of basemap:
 --
 
 ![img-center-80](images/basemap_plugin2.png)
@@ -742,10 +803,10 @@ class:center,middle
 #Working with CSV data
 --
         
-##Sometimes we have data that's not a shapefile.  Commonly, this is stored in a .csv file
+##Sometimes we have data that's not a shapefile.  Commonly, this is stored in a .csv file.
 --
 
-##As long as there is geometry in the dataset, you can load it into QGIS
+##As long as there is geometry in the dataset, you can load it into QGIS to render on your map.
 --
 
 + On the Side Bar - "Open Comma-Delimited File"
@@ -759,16 +820,27 @@ class:center,middle
 ##You are prompted enter information about this file, notably:
 --
 
-+ Which fields have the geography, and
++ The type of file it is, and
 --
 
-+ Which projection you want:
++ Which fields have the geography:
 --
 
-![img](images/import_CSV.png)
+![img-center-80](images/import_CSV.png)
+
+
+---
+
++ Click OK and you are prompted to choose a projection:
 --
 
-+ Click OK and the data appears on your map
+![img-left-bottom](images/csv_projection_prompt.png)
+--
+
+![img-right-bottom](csv_projection_prompt.png)
+--
+
++ Click ok and the data appear on your map
 
 
 ---
@@ -776,7 +848,7 @@ class:center,middle
 ##Even though it's on your map, it's not a shapefile
 --
 
-+ Do a Save As and select shapfiles as the type:
++ Do a **Save As** and select shapfiles as the type:
 --
 
 ![img-center-60](images/save_csv_asSHP2.png)
@@ -904,10 +976,16 @@ class:center, middle
 ##First, we'll buffer
 --
 
-+ Open buffer tool
++ Open buffer tool:
 --
 
-+  What is the input file?
+![img](images/geoprocessig_menu.png)
+--
+
+![img-top](images/print-composer-pdf.png)
+--
+
++ What is the input file?
 --
 
 + Distance
