@@ -637,14 +637,7 @@ class:center,middle
 + But a necessary part of it nonetheless
 --
 
-+ Convert points on Earth (**latitude** and **longitude**) to x and y coordinates
-
-
----
-
-# Projections
-
-## Allow maps to move from 3D space (Earth) to 2D space (eg, a piece of paper)
++ Convert points on the 3-dimensional Earth (**latitude** and **longitude**) to x and y coordinates on a 2-dimensional map
 
 --
 
@@ -654,7 +647,8 @@ class:center,middle
 
 ---
 
-# Every projection distorts some part of your map
+#Projections
++ Every projection distorts some part of your map
 
 ![img-center-50](images/projections-faces.png)
 
@@ -662,24 +656,23 @@ class:center,middle
 
 ---
 
-# Mercator - a common map projection
+# Mercator Projections
 --
 
-![img-center-60](images/mercator.gif)
++ A common map projection
+--
+
++ Makes geometries near poles look bigger than geometries near the equator
+--
+
+![img-center-50](images/mercator.gif)
 
 ---
 
-# Mercator makes geometries near poles look bigger than geometries near the equator
-
+#Projections Matter
 --
 
-![img-center-80](images/projections-mercator-puzzle.png)
-
-[Mercator Puzzle Redux](http://bramus.github.io/mercator-puzzle-redux/)
-
----
-
-# These circles are all the same size on the globe:
++ These circles are all the same size on the globe:
 
 ![img-center-50](images/projections-tissot-mercator.png)
 
@@ -687,7 +680,8 @@ class:center,middle
 
 ---
 
-# As are these:
+#Projections Matter
++ As are these:
 
 ![img-center-60](images/projections-tissot-mollweide.png)
 
@@ -695,41 +689,50 @@ class:center,middle
 
 ---
 
-# And these:
+#Projections Matter
++ And these:
 
-![img-center-60](images/projections-tissot-oblique-mercator.png)
+![img-center-50](images/projections-tissot-oblique-mercator.png)
 
 [Progonos](http://www.progonos.com/furuti/MapProj/Normal/CartProp/Distort/distort.html)
 
 ---
 
-# Projections
-
-## For the most part we will work in **WGS 84** (latitude and longitude)
-
---
-
-## But if we need to calculate area or do anything else where we want to talk about **feet** or **meters** we will use a local projection (in NYC this is called **State Plane Long Island**).
+#Projections Matter
+![img-full](images/projections.png)
 
 ---
 
-# Projections have unique IDs that make it easier to talk about them
+#Projections
 
++ For the most part we will work in **WGS 84** (latitude and longitude)
+--
+
++ But if we need to calculate area or do anything else where we want to talk about **feet** or **meters** we will use a local projection (in NYC this is called **State Plane Long Island**)
+
+![img-center-40](images/projections_NYSplane.png)
+
+
+---
+
+# Projections
++ Identified by unique IDs that make it easier to talk about them
 --
 
 + WGS 84 is referred to as **EPSG:4326**
-
 --
 
 + State Plane Long Island is referred to as **EPSG:2263**
-
 --
 
 ## Remember these two and you should be set
 
 ---
 
-# Projections
+
+---
+
+# Re-Projectioning Data
 
 ## When you want a layer to be in a different projection than it is currently in, you can re-project it
 --
@@ -741,6 +744,14 @@ class:center,middle
 --
 
 + and pick the new projection in the CRS field:
+
+---
+
+# For more information on CRS and map projections: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html
+
+---
+
+#Your Turn
 
 
 ---
