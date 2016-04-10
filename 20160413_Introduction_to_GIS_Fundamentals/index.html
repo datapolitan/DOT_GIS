@@ -400,9 +400,11 @@ class: center, middle
 + Stores spatial data, like points, lines, and polygons
 --
 
-+ Multiple files comprise a "shapefile":
++ Multiple files comprise a "shapefile"
+
 --
-![img-center-80](images/shapefile.png)
+
+![img-center-80](images/file_struct1.png)
 
 ---
 
@@ -411,17 +413,22 @@ class: center, middle
 + Have a few limitations
 --
 
-+ One geometry type per shapefile
++ One geometry type (Point, Line, Polygon) per shapefile
 --
 
 + So sometimes you end up with this:
-![img](images/shapefile-one-geometry-per-file.png)
+![img](images/file_struct2.png)
 
 ---
 
 # Shapefiles
+--
+
++ Column names can only be letters, numbers, and underscores "_"
+--
 
 + Column names can only be ten characters long
+
 --
 
 ![img-center-100](images/shapefile-column-names.png)
@@ -429,10 +436,12 @@ class: center, middle
 
 ---
 
-#Adding on Layers
---
+class:center,middle
+#Let's add another layers
 
-##Add the 311 Service Request shapefile to the project
+---
+
+#Add the 311 Service Request shapefile to the project
 
 <!-- add image of 311 shapefile added - points -->
 
