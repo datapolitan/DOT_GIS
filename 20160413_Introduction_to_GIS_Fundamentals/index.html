@@ -914,7 +914,6 @@ class: center,middle
 class:center,middle
 #What do you think of QGIS so far?
 
-
 ---
         
 #Goals for the Afternoon
@@ -922,67 +921,91 @@ class:center,middle
 
 ---
 
-#Enhancing Your Map
---
-        
-##Adding base maps will give your map context.
---
-
-## In QGIS, you need a plugin to use base maps.
-
+class:center,middle
+#What have our maps been lacking?
 
 ---
 
+#Base Maps
+![img-full](images/map1.png)
+
+---
+
+#Base Maps
+![img-center-80](images/basemap1.png)
+
+---
+
+#Base Maps
+--
+       
++ Adding base maps will give your map context
+--
+
++ In QGIS, you need a plugin to use base maps
+--
+
++ There are several, but we're only going to use one of them
+
+---
+
+#Base Map Plugin
 + From the Plugins menu, select "Manage and Install Plugins"
 --
 
-![img](images/basemap_plugin.png)
---
+![img-center-60](images/basemap2.png)
 
-+ Select the OpenLayers plugin and ensure it's enabled
+---
+
+#Base Map Plugin
+
++ Search for the QuickMapServices plugin and install it
+
+![img-center-75](images/basemap3_box.png)
+
+---
+
+#Setting Up QuickMapServices Plugin
++ Go to the Settings Menu
+![img-center-80](images/basemap4.png)
+
+---
+
+#Setting Up QuickMapServices Plugin
++ Get the contributed packs
+![img-center-80](images/basemap5_box.png)
+
+---
+
+#Setting Up QuickMapServices Plugin
++ Revel in all the beautiful basemaps
+![img-right-30](images/basemap6.png)
+
+---
+
+# Your Turn
++ Find a good basemap for your data
++ Don't be afraid to play around
 
 
 ---
 
-#As an alternatives, you can try Quick Map Services:
---
-
-![img-center-80](images/quick_map_services.png)
-
-
----
-
-#Now you can add a basemap
---
-
-+ Go to the "Web" menu and select one of these menus:
---
-
-+ Select a type of basemap:
---
-
-![img-center-80](images/basemap_plugin2.png)
-
-
----
-
-#The basemap loaded:
---
-
-![img-full](images/basemap.png)
-
----
-
-#The basemap zoomed in:
---
-
-![img-full](images/basemap_zoomed.png)
-
----
 class:center,middle
-#10 Min Break
+#5 Min Break
 ![img-center-50](images/sadtopographies/cape_disappointment_lighthouse.png)
 ####Source: https://www.instagram.com/sadtopographies/
+
+---
+
+#Basic Spatial Joins
+
+![img](images/join1.png)
+Point to Polygon
+Relate points inside a polygon to that polygon (ex. count the number of points)
+Polygon to Point 
+Points can take on value of enclosing polygon
+
+
 ---
 
 # Print Composer
@@ -1062,116 +1085,32 @@ class:center,middle
 
 ![img-full](images/print-composer-pdf.png)
 
+---
+
+class:center,middle
+#10 Min Break
+![img-center-50](images/sadtopographies/grumpy_lane.png)
+####Source: https://www.instagram.com/p/BCbMlYZD89p/
 
 ---
 
-#Getting More Analytical - Geoprocessing
---
-
-##**Buffering** - Allows you to expand the area around your feature
---
-
-##**Clipping** - Allows you to cut away what you don't need
-
-
----
-
-##We'll do some geoprocessing on bike accidents, as they relate to bike lanes.   To review a bit:
---
-
-+ First, bring in the bike lanes shapefile
---
-
-+ Then, bring in the bike accidents .csv
---
-
-+ Convert this to a shapefile
-
+#Your Turn
++ Working in groups, create a map of DOT 311 Service Requests for the Community Districts in your area
++ Decide on the map elements you want to include (legend, scale, north arrow, etc.)
++ Decide on the colors you want and how you want to represent the values
++ Save your map as a PDF and be ready to present it to the class
++ We'll all be available to help as needed
++ Have fun!
 
 ---
 
-class:center, middle
-##We want to capture bike accidents that happened outisde of bike lanes.   
---
-
-##How might we go about this?
-
+class:center,middle
+#Presentations
 
 ---
 
-##First, we'll buffer
---
-
-+ Open buffer tool:
---
-
-![img](images/geoprocessig_menu.png)
---
-
-![img-top](images/print-composer-pdf.png)
---
-
-+ What is the input file?
---
-
-+ Distance
---
-
-+ Click OK - results?
---
-
-+ Save this as a new layer
-
-
----
-
-class:center, middle
-##Now we want to get rid of all the accidents that don't intersect with the bike lanes. 
---
-
-##How might we do this?
-
-
----
-
-#Now, we'll clip
---
-
-+ Open clipping tool
---
-
-+ What is the input file and what is the processing file?
---
-
-+ Click OK - results?
---
-
-+ Save this as a new layer
-
-
----
-
-#Your turn!
---
-
-##Working in teams, create a scenario with this bike data, and do two things:
---
-
-+ Some type of geoprocessing, using clipping or buffering or both
---
-
-+ Don't forget about querying / filtering!
---
-
-+ Then you'll add some style to your results
---
-
-+ Finally, create an export using the Print Composer, to share with the class.
-
-
----
-
-# Resources
+class:center,middle
+#Good Resources for Further Information
 
 ---
 
@@ -1185,7 +1124,7 @@ class:center, middle
 
 # Learning QGIS
 
-![img-center-30](images/learning-qgis.png)
+![img-center-50](images/learning-qgis.png)
 
 [Learning QGIS](https://www.packtpub.com/application-development/learning-qgis-20)
 
@@ -1193,7 +1132,7 @@ class:center, middle
 
 # QGIS Map Design
 
-![img-center-30](images/qgis-map-design.png)
+![img-center-50](images/qgis-map-design.png)
 
 [QGIS Map Design](http://locatepress.com/qmd)
 
@@ -1201,7 +1140,51 @@ class:center, middle
 
 #Projections
 + [QGIS online manual documentation](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html)
-        
+
+---
+
+![img-center-90](images/google.png)
+
+---
+
+#Reminders
+--
+
++ Know your layer SRS
+--
+
++ When in doubt, zoom in and then zoom out
+--
+
++ If you’re working with a CSV file and run into an error, export as a shapefile and try it again
+--
+
++ Save your project often
+--
+
++ Choose good file names
+
+---
+
+#Final Thoughts
+--
+
++ Maps are a great way to visualize and explore spatial data
+--
+
++ Some data is only intelligible when mapped
+--
+
++ QGIS is a cheap (as in free) way to get started 
+--
+
++ There are many resources online for how to use QGIS and other GIS applications
+--
+
++ Share what you know with others -> Data wants to be mapped
+
+---
+
 #Thank You
 
 ##Richard
