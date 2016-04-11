@@ -33,6 +33,38 @@ class:center, middle
 
 ##How might we go about this?
 
+---
+
++ Click OK 
+
+
+---
+
+##the results:
+--
+
+![img-left-45](images/buffering_before.png)
+--
+
+![img-right-45](images/buffering_after.png)
+
+
+---
+
+##First, we'll buffer
+--
+
++ Open the buffer tool:
+--
+
+![img](images/geoprocessing_menu.png)
+
+
+---
+
+![img](images/buffering.png)
+--
+
 
 ---
 
