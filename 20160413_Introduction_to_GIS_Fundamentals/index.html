@@ -25,75 +25,33 @@ class: center,middle
 ##Beth Pappas
 ###Follow along: http://bit.ly/dot_intro_gis
 
----
-
-#Introductions
-+ Name
-+ Department / Job
-+ One thing you hope to get out of class today
 
 ---
 
 #Goals for the class 
---
-
 + Describe the foundational concepts of spatial analysis and mapmaking
---
-
 + Describe the general structure and purpose of Geographic Information Systems (GIS)
---
-
 + Describe spatial data formats and sources of spatial data
---
-
 + Apply concepts of spatial analysis using NYC Open Data to answer an NYC-related problem
---
-
 + Discuss resources for further information and instruction on QGIS and other spatial analysis tools
 
 ---
 
 #Outcomes
---
-
 + You will be familiar with the foundational concepts in spatial analysis and mapmaking
---
-
 + You will understand the structure and purpose of GIS
---
-
 + You will be practiced in applying spaital concepts to real-world problems
---
-
 + You will be familiar with the differences between open source and proprietary software applications
---
-
 + You will be familiar with resources for further information on how to use QGIS for spatial analysis and mapmaking
 
 ---
 
 #Goals for this morning
---
-
 + Review basic geospatial principles and GIS tools
---
-
 + Discuss spatial data formats
---
-
 + Demonstrate and practice how to load, filter, and select data in QGIS
---
-
 + Demonstrate and practice how to style spatial data
---
-
 + Demonstrate and practice how to export data from QGIS
-
-
----
-
-class:center,middle
-#Why Do We Create Maps?
 
 ---
 
@@ -103,21 +61,10 @@ class:center,middle
 ---
 
 #General Reference Maps
-
---
-
 + Show important physical features of an area
---
-
 + Include natural and man-made features
---
-
 + Usually meant to help aid in the navigation or discovery of locations
---
-
 + Usually fairly simple
---
-
 + Can be stylized based on the intended audience (tourists vs locals)
 
 ---
@@ -128,16 +75,10 @@ class:center,middle
 ---
 
 #Thematic Maps
-
---
-
 + Focuses on a specific theme or subject area
---
-
 + Features on the map represent the phenomenon being mapped
---
-
 + Spatial features used for reference
+
 ---
 
 ![img-full](images/thematic1.png)
@@ -161,7 +102,6 @@ class:center,middle
 #Area Cartogram – Electoral Votes by State
 ![img-center-60](images/Cartogram_US.png)
 #####Source: http://training.fws.gov/courses/csp/csp7203/resources/Types_of_Maps_2013.pdf 
-
 
 ---
 
@@ -209,17 +149,9 @@ class:center,middle
 ---
 
 #Geographic Information Systems (GIS)
---
-
 + Create interactive queries (user-created searches)
---
-
 + Analyze spatial information
---
-
 + Edit data in maps
---
-
 + Present the results of all these operations
 
 ---
@@ -261,41 +193,26 @@ Source: [NYC Open Data 311 Noise Complaints, 1 Jan - 20 May 2014, Between Midnig
 ---
 
 #Proprietary vs Open Source Software
---
-
 + Proprietary software source code is owned by an individual or an organization and tightly restricted (usually for profit)
---
-
 + Open source software source code is freely available to anyone for download, alteration, and republishing
 
 ---
 
 #Proprietary vs Open Source Software
-
---
-
 + Proprietary software code is generally supported by a team of paid professionals working for the organization that owns the code
---
-
 + Open source software code is generally supported by a mix of paid and volunteer professionals that contribute changes back to the community
+
 ---
 
 #Proprietary vs Open Source Software
---
-
 + Proprietary software is often available only by purchasing a license
---
-
 + Open source software is free to use though there generally a license that specifies the restrictions (if any) on its use and reuse
---
-
 + Companies using open source software may charge for the use of the software through their proprietary implementations or via their infrastructure
 
 ---
 
 class:center,middle
 #Examples of Open Source Mapping Software
-
 
 ---
 
@@ -312,46 +229,24 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 ---
 
 #QGIS - The Good
---
-
 + Freely available desktop application
---
-
 + Lots of features
---
-
 + Works with different data types
---
-
 + A strong community developing new features and plug-ins
 
 ---
 
 #QGIS - The Bad
---
-
 + A bit bug-y sometimes
---
-
 + Visual style is a little clunky
---
-
 + Features change between versions
---
-
 + It will crash (but so will ArcGIS)
 
 ---
 
 #QGIS - The Bug-y
---
-
 + Sometimes things get jumbled -> zoom out then zoom back in
---
-
 + Things don't work properly -> close and restart
---
-
 + Other problems that we'll find in class
 
 ---
@@ -464,100 +359,43 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
 
-class: center, middle
-#5 Min Break
-
-![img-center-60](images/sadtopographies/disappointment_cove.png)
-
-####Source: https://www.instagram.com/sadtopographies/
-
----
-
 #Layers
 ![img-full](images/map1.png)
 
 ---
 
 #Shapefiles
---
-        
 + Basic file for storing map elements
---
-
 + Stores spatial data, like points, lines, and polygons
---
-
 + Multiple files comprise a "shapefile"
 
---
-
 ![img-center-80](images/file_struct1.png)
 
 ---
 
 #Shapefiles
-
-![img-center-80](images/file_struct1.png)
---
-
 + .shp—The main file that stores the feature geometry
---
-
 + .dbf—The dBASE table that stores the attribute information of features
-
----
-
-#Shapefiles
-
-![img-center-80](images/file_struct1.png)
-
 + .prj—The file that stores the coordinate system information
---
-
 + .shx—The index file that stores the index of the feature geometry
-
----
-
-#You might also see
---
-
 + .cpg—Identifies the character set to be used
---
-
 + .sbn and .sbx—The files that store the spatial index of the features
 
 ---
 
-# Shapefiles
-
+#Shapefiles
 + Have a few limitations
---
-
 + One geometry type (Point, Line, Polygon) per shapefile
---
-
 + So sometimes you end up with this:
 ![img](images/file_struct2.png)
 
 ---
 
 # Shapefiles
---
-
 + Column names can only be letters, numbers, and underscores "_"
---
-
 + Column names can only be ten characters long
 
---
-
 ![img-center-100](images/shapefile-column-names.png)
-
-
----
-
-class:center,middle
-#Let's add another layer
 
 ---
 
@@ -595,7 +433,7 @@ class:center,middle
 
 #Filter and Query
 ![img-left-60](images/filter2.png)
---
+
 ![img-right-35](images/filter3.png)
 
 ---
@@ -1277,35 +1115,12 @@ class:center,middle
 
 class:center,middle
 #Good Resources for Further Information
-
----
-
-#GIS Stack Exchange
-
-![img-center-90](images/gis-stackexchange.png)
-
-[GIS Stack Exchange](http://gis.stackexchange.com/)
-
----
-
-#Learning QGIS
-
-![img-center-40](images/learning-qgis.png)
-
-[Learning QGIS](https://www.packtpub.com/application-development/learning-qgis-20)
-
----
-
-#QGIS Map Design
-
-![img-center-40](images/qgis-map-design.png)
-
-[QGIS Map Design](http://locatepress.com/qmd)
-
----
++ GIS Stack Exchange: http://gis.stackexchange.com/
++ Learning QGIS: https://www.packtpub.com/application-development/learning-qgis-20
++ QGIS Map Design: http://locatepress.com/qmd
 
 #Projections
-+ [QGIS online manual documentation](http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html)
++ QGIS online manual documentation: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/coordinate_reference_systems.html)
 
 ---
 
