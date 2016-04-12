@@ -585,9 +585,10 @@ class:center,middle
 #Projections
 
 + For the most part we will work in **WGS 84** (latitude and longitude)
-+ But if we need to calculate area or do anything else where we want to talk about **feet** or **meters** we will use a local projection (in NYC this is called **State Plane Long Island**)
++ In NYC, we use a more accurate projection **NY State Plane/Long Island Zone**
+![img-right-60](images/projections_NYSplane.png)
 
-![img-center-40](images/projections_NYSplane.png)
+######Source: https://alidade.wikispaces.com/New+York+SPCS+Zones
 
 ---
 
@@ -596,11 +597,6 @@ class:center,middle
 + WGS 84 is referred to as **EPSG:4326**
 + State Plane Long Island is referred to as **EPSG:2263**
 ## Remember these two and you should be set
-
----
-
-class:center,middle
-#Back to Adding CSV Data
 
 ---
 
@@ -681,28 +677,6 @@ class:center,middle
 + Exporting data
 
 ---
-class:center,middle
-#LUNCH
-![img-center-50](images/sadtopographies/agony_island.png)
-
-####Source: https://www.instagram.com/sadtopographies/
-
----
-
-class: center,middle
-#Welcome Back!
-
----
-
-class: center,middle
-#Tell us one thing you learned this morning that you found useful, interesting, and/or helpful
-
----
-
-class:center,middle
-#What do you think of QGIS so far?
-
----
         
 #Goals for the Afternoon
 + Add reference data to our maps
@@ -714,15 +688,6 @@ class:center,middle
 
 class:center,middle
 #What have our maps been lacking?
-
----
-
-#Base Maps
-![img-full](images/map1.png)
-
----
-
-#Base Maps
 ![img-center-80](images/basemap1.png)
 
 ---
@@ -771,14 +736,6 @@ class:center,middle
 + Find a good base map for your data
 + Don't be afraid to play around
 
-
----
-
-class:center,middle
-#5 Min Break
-![img-center-50](images/sadtopographies/cape_disappointment_lighthouse.png)
-####Source: https://www.instagram.com/sadtopographies/
-
 ---
 
 #Basic Spatial Joins
@@ -796,10 +753,6 @@ class:center,middle
 
 #What are some of the spatial joins we could do with this data?
 ![img-center-60](images/add_csv7.png)
-
----
-class:center,middle
-#Let's do one together
 
 ---
 
@@ -820,11 +773,6 @@ class:center,middle
 
 
 ![img-center-90](images/join6.png)
-
----
-
-#Reproject the boroughs shapefile into 4326
-![img-center-70](images/join7.png)
 
 ---
 
@@ -855,13 +803,6 @@ class:center,middle
 
 ---
 
-class:center,middle
-#10 Min Break
-![img-center-50](images/sadtopographies/grumpy_lane.jpg)
-####Source: https://www.instagram.com/p/BCbMlYZD89p/
-
----
-
 # Print Composer
 + How you make exportable and printable maps in QGIS
 + Able to add map elements (legends, scales, text, etc)
@@ -886,7 +827,7 @@ class:center,middle
 
 #Add New Map tool will add your current map
 ![img-left-20](images/print_comp5_box.png)
---
+
 ![img-right-70](images/print_comp6.png)
 
 ---
@@ -933,98 +874,52 @@ class:center,middle
 
 ---
 
-class:center,middle
-#Presentations
+#What We've Covered This Afternoon
++ Adding base maps to QGIS
++ Installing plug-ins
++ Joining data
++ Creating a printable map in print composer
 
 ---
 
 #A Few Things We Didn't Talk About
---
-
 + Normalizing data for choropleths ([see this video](https://www.youtube.com/watch?v=t1RvSxNcafU))
---
-
 + Buffering features
---
-
 + Geocoding
---
-
 + Spatial databases
---
-
 + Other spatial data types (KML, GeoJSON, GeoTIFF)
---
-
 + Editing data
 
 ---
 
 #QGIS - The Good
---
-
 + Open-source software that’s freely available
---
-
 + Works with lots of different data types, including shapefiles, KML (Google Earth), GeoJSON, and text files
---
-
 + Works with various spatial databases
---
-
 + Strong community developing features and plug-ins
+
 ---
 
 #QGIS - The Bad
---
-
 + Not an enterprise software like ESRI ArcGIS
---
-
 + The visual style is a little clunky
---
-
 + Features tend to change between versions (moving around, menu option changes, etc) 
---
-
 + Major versions tend to have major feature changes
---
-
 + Plug-ins tend not to work with newer versions
---
-
 + And it crashes (as you've probably already experienced)
 
 ---
 
-#And of course...
-![img-ful](images/bug.png)
-
----
-
 #QGIS - The Bug-y
---
-
 + Projects with different CRS layers tend to get misaligned when zooming
---
-
 + _Zoom in and then back out to fix_
---
-
 + Google base maps tend not to appear on load
---
-
 + _Have to zoom in to get them to appear_
---
-
 + Other odd behavior that they’re hopefully working on
---
-
 + _File them here: https://hub.qgis.org/wiki/17/Bugreports_
 
 ---
 
-class:center,middle
 #Good Resources for Further Information
 + GIS Stack Exchange: http://gis.stackexchange.com/
 + Learning QGIS: https://www.packtpub.com/application-development/learning-qgis-20
@@ -1041,39 +936,19 @@ class:middle
 ---
 
 #Reminders
---
-
 + Know your layer SRS
---
-
 + When in doubt, zoom in and then zoom out
---
-
 + If you’re working with a CSV file and run into an error, export as a shapefile and try it again
---
-
 + Save your project often
---
-
 + Choose good file names
 
 ---
 
 #Final Thoughts
---
-
 + Maps are a great way to visualize and explore spatial data
---
-
 + Some data is only intelligible when mapped
---
-
 + QGIS is a cheap (as in free) way to get started 
---
-
 + There are many resources online for how to use QGIS and other GIS applications
---
-
 + Share what you know with others -> Data wants to be mapped
 
 ---
