@@ -70,8 +70,8 @@ class:center,middle
 ---
 
 class:center,middle
-![img-full](images/referencemap.png)
-
+![img-center-90](images/referencemap.png)
+#####Source: http://nationalmap.gov/small_scale/printable/reference.html
 ---
 
 #Thematic Maps
@@ -110,22 +110,19 @@ class:center,middle
 
 ---
 
-#Points
-        
-![img-center-60](images/point_feature.png)
-
+#Points  
+![img-center-50](images/point_feature.png)
+####Source: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview
 ---
 
 #Lines
-
-![img-center-60](images/polyline_feature.png)
-
+![img-center-50](images/polyline_feature.png)
+####Source: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview
 ---
 
 #Polygons
-        
-![img-center-60](images/polygon_feature.png)
-
+![img-center-50](images/polygon_feature.png)
+####Source: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview
 ---
 
 class:center,middle
@@ -170,13 +167,14 @@ class:center,middle
 #[ArcGIS](http://www.esri.com/software/arcgis/arcgis-for-desktop)
 
 ![img-center-large](images/arcgis.jpg)
-[Source](http://www.esri.com/news/arcuser/1012/a-workflow-for-creating-and-sharing-maps.html)
+#####Source: http://www.esri.com/news/arcuser/1012/a-workflow-for-creating-and-sharing-maps.html
 
 ---
 
 #[Adobe Illustrator](http://www.adobe.com/products/illustrator.html)/[Mapublisher](http://www.avenza.com/mapublisher)
 ![img-full](images/illustrator.jpg)
-[Source](http://www.avenza.com/resources/blog/2011/06/28/how-get-open-street-map-data-adobe-illustrator-mapublisher)
+
+#####Source: http://www.avenza.com/resources/blog/2011/06/28/how-get-open-street-map-data-adobe-illustrator-mapublisher
 
 ---
 
@@ -361,6 +359,7 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 #Layers
 ![img-full](images/map1.png)
+####Image Source: http://www.geocontrolling.com/co-je-gis.htm
 
 ---
 
@@ -448,14 +447,9 @@ Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.u
 
 ---
 
-class:center,middle
-#We can also filter by multiple conditions
-
----
-
 #Filter and Query - Multiple Conditions
 ![img-left-60](images/filter6_box.png)
---
+
 ![img-right-35](images/filter7.png)
 
 ---
@@ -477,7 +471,7 @@ class:center,middle
 
 #Exporting Data
 ![img-left-35](images/export1.png)
---
+
 ![img-right-50](images/export2_box.png)
 
 ---
@@ -490,13 +484,6 @@ class:center,middle
 
 ---
 
-class:center
-#10 Min Break
-![img-center-50](images/sadtopographies/unfortunate_cove.png)
-
-####Source: https://www.instagram.com/sadtopographies/
----
-
 #Let's add another layer
 + [Right click this link](data/Parking_Facilities.csv)
 + Select "Save link as" 
@@ -505,8 +492,6 @@ class:center
 ---
 
 #What is a CSV file?
---
-
 ![img](images/csv1.png)
 
 ---
@@ -523,8 +508,6 @@ class:center
 
 ![img-center-60](images/add_csv2_box.png)
 
---
-
 ![img-center-55](images/add_csv3.png)
 
 ---
@@ -534,28 +517,15 @@ class:center
 
 ---
 
-#Adding CSV Data
-![img](images/add_csv5.png)
-
----
-
 class:center,middle
 #So what is a Coordinate Reference System?
 
 ---
 
 # Projections
---
-
 + No one's favorite part of GIS
---
-
 + But a necessary part of it nonetheless
---
-
 + Convert points on the 3-dimensional Earth (**latitude** and **longitude**) to x and y coordinates on a 2-dimensional map
-
---
 
 ![img-center-85](images/projections-orange.jpg)
 
@@ -573,21 +543,14 @@ class:center,middle
 ---
 
 # Mercator Projections
---
-
 + A common map projection
---
-
 + Makes geometries near poles look bigger than geometries near the equator
---
 
 ![img-center-50](images/mercator.gif)
 
 ---
 
 #Projections Matter
---
-
 + These circles are all the same size on the globe:
 
 ![img-center-50](images/projections-tissot-mercator.png)
@@ -622,8 +585,6 @@ class:center,middle
 #Projections
 
 + For the most part we will work in **WGS 84** (latitude and longitude)
---
-
 + But if we need to calculate area or do anything else where we want to talk about **feet** or **meters** we will use a local projection (in NYC this is called **State Plane Long Island**)
 
 ![img-center-40](images/projections_NYSplane.png)
@@ -632,14 +593,8 @@ class:center,middle
 
 # Projections
 + Identified by unique IDs that make it easier to talk about them
---
-
 + WGS 84 is referred to as **EPSG:4326**
---
-
 + State Plane Long Island is referred to as **EPSG:2263**
---
-
 ## Remember these two and you should be set
 
 ---
@@ -674,7 +629,6 @@ class:center,middle
 #Selecting Points
 ![img-center-40](images/select2.png)
 
---
 + Click the point
 ![img-center-40](images/select3.png)
 
@@ -693,8 +647,6 @@ class:center,middle
 #Selecting Points - Attribute Table
 ![img-left-30](images/select7.png)
 
---
-
 ![img-right-65](images/select8.png)
 
 ---
@@ -707,9 +659,7 @@ class:center,middle
 #Selecting Points - Saving Selection
 
 + If we wanted to reproject the data into a different CRS, we could do that here
---
 ![img-center-60](images/reproject1.png)
---
 
 + Pick the new projection in the CRS field (like when we imported the CSV)
 
@@ -723,23 +673,11 @@ class:center,middle
 ---
 
 #What We've Covered
---
-
 + What is GIS
---
-
 + Basic GIS concepts and tools
---
-
 + Adding, styling, and labeling data in QGIS
---
-
 + Projections
---
-
 + Selecting features
---
-
 + Exporting data
 
 ---
@@ -767,17 +705,9 @@ class:center,middle
 ---
         
 #Goals for the Afternoon
---
-
 + Add reference data to our maps
---
-
 + Learn how to join features in QGIS
---
-
 + Create printable maps in QGIS
---
-
 + Share resources for further learning
 
 ---
@@ -798,14 +728,8 @@ class:center,middle
 ---
 
 #Base Maps
---
-       
 + Adding base maps will give your map context
---
-
 + In QGIS, you need a plugin to use base maps
---
-
 + There are several, but we're only going to use one of them
 
 ---
@@ -861,12 +785,9 @@ class:center,middle
 
 ![img-right-30](images/join1.png)
 
---
-
 ##Point to Polygon
 + Relate points inside a polygon to that polygon (ex. count the number of points)
 
---
 
 ##Polygon to Point 
 + Points can take on value of enclosing polygon
@@ -895,11 +816,8 @@ class:center,middle
 #Parking facilities by borough
 ![img-center-50](images/join4.png)
 
---
-
 ![img-center-50](images/join5.png)
 
---
 
 ![img-center-90](images/join6.png)
 
@@ -916,8 +834,6 @@ class:center,middle
 
 #Parking facilities by borough
 ![img-left-45](images/join9.png)
-
---
 
 ![img-right-45](images/join10.png)
 
@@ -947,13 +863,8 @@ class:center,middle
 ---
 
 # Print Composer
---
-
 + How you make exportable and printable maps in QGIS
---
-
 + Able to add map elements (legends, scales, text, etc)
---
 
 ![img-center-70](images/print_comp1.png)
 
@@ -962,7 +873,7 @@ class:center,middle
 # Create a new print composer
 
 ![img-left-50](images/print_comp2.png)
---
+
 ![img-right-40](images/print_comp3.png)
 
 ---
