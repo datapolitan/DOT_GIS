@@ -23,6 +23,14 @@ img {
 img[alt=img-full] {
   width:100%;
 }
+img[alt=img-left-10]{
+  width:10%;
+  float:left;
+}
+img[alt=img-left-15]{
+  width:15%;
+  float:left;
+}
 img[alt=img-left-20]{
   width:20%;
   float:left;
