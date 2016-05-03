@@ -312,6 +312,83 @@ class:center,middle
 
 ---
 
+#SQL
+
+--
+
++ Structured Query Language
+--
+
++ The language databases understand
+---
+
+#SQL queries
+
+--
+
++ Can *view* data
+--
+
++ and *change* data
+--
+
++ We're going to stick to *viewing* data
+
+---
+
+![img-center-80](images/paper-stack.jpg)
+
+---
+
+#You might ask:
+
+![img-right-30](images/paper-stack.jpg)
+
++ Which pages refer to properties in Brooklyn?
+--
+
++ Which pages refer to properties in Brooklyn that have been built on since 1950?
+--
+
++ What are the addresses of those properties?
+
+---
+
+#Databases are great at these types of questions
+--
+
+##It's what they were made for
+--
+
+##SQL will let us ask these questions
+
+---
+
+#SQL looks like:
+
+```
+SELECT *
+FROM crashes
+```
+--
+
+#In english: "select all the crashes"
+
+---
+
+#SQL looks like:
+
+```
+SELECT *
+FROM crashes
+WHERE BOROUGH = 'QUEENS'
+```
+--
+
+#In english: "select all the crashes in Queens"
+
+---
+
 class:center,middle
 #Presentations
 
