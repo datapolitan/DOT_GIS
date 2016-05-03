@@ -234,3 +234,8 @@ p.footer{
   bottom:0px;
   font-size: 0.4em;
 }
+
+.remark-code {
+  font-size: 35px;
+  line-height: 35px;
+}

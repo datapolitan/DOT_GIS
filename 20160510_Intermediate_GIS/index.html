@@ -295,9 +295,160 @@ class:center,middle
 
 ---
 
+#Your turn
++ [Download this shapefile](data/boros/boros.zip) to your desktop
++ Unzip the file and open the shapefile in QGIS
++ [Download this CSV](data/Parking_Facilities.csv) to your desktop
++ Add the CSV to QGIS
++ Add a basemap
++ Style the polygons however you'd like
++ Style the labels
+
+---
+
+class:center,middle
+#Types of Maps
+
+---
+
+#General Reference Maps
+
+--
+
++ Show important physical features of an area
+--
+
++ Include natural and man-made features
+--
+
++ Usually meant to help aid in the navigation or discovery of locations
+--
+
++ Usually fairly simple
+--
+
++ Can be stylized based on the intended audience (tourists vs locals)
+
+---
+
+class:center,middle
+![img-center-90](images/referencemap.png)
+#####Source: http://nationalmap.gov/small_scale/printable/reference.html
+---
+
+#Thematic Maps
+
+--
+
++ Focus on a specific theme or subject area
+--
+
++ Features on the map represent the phenomenon being mapped
+--
+
++ Spatial features used for reference
+---
+
+![img-full](images/thematic1.png)
+#####Source: http://www.usna.usda.gov/Hardzone/ushzmap.html 
+
+---
+
+#Choropleth
+![img-center-75](images/choropleth.png)
+
+#####Source: http://www.geogalot.com/myp-humanities/year-9/understanding-hazards/003---choropleth-mapping
+
+---
+
+#Choropleth
+
+![img-center-90](images/floatingsheep-beer-church.jpg)
+
+#####Source: http://www.floatingsheep.org/2012/07/church-or-beer-americans-on-twitter.html
+
+---
+
 #Goals for the Afternoon
 
 --
+
+---
+
+#SQL
+
+--
+
++ Structured Query Language
+--
+
++ The language databases understand
+---
+
+#SQL queries
+
+--
+
++ Can *view* data
+--
+
++ and *change* data
+--
+
++ We're going to stick to *viewing* data
+
+---
+
+![img-center-80](images/paper-stack.jpg)
+
+---
+
+#You might ask:
+
+![img-right-30](images/paper-stack.jpg)
+
++ Which pages refer to properties in Brooklyn?
+--
+
++ Which pages refer to properties in Brooklyn that have been built on since 1950?
+--
+
++ What are the addresses of those properties?
+
+---
+
+#Databases are great at these types of questions
+--
+
+##It's what they were made for
+--
+
+##SQL will let us ask these questions
+
+---
+
+#SQL looks like:
+
+```
+SELECT *
+FROM crashes
+```
+--
+
+#In english: "select all the crashes"
+
+---
+
+#SQL looks like:
+
+```
+SELECT *
+FROM crashes
+WHERE BOROUGH = 'QUEENS'
+```
+--
+
+#In english: "select all the crashes in Queens"
 
 ---
 
