@@ -164,60 +164,72 @@ class:center,middle
 
 #[QGIS](http://www.qgis.org/)
 
-![img-full](images/qgis.png)
-Source: [NYC Open Data Portal 311 Service Requests](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9), DOT Responsible Agency 1 January - 30 June 2015
+![img-center-80](images/p1_finished.png)
+
 
 ---
 
 class:center,middle
-#What can you do with QGIS?
+#Let's Get Started
+
+![img-center-20](images/qgis_launch.png)
+
 
 ---
 
-#Load data
-![img-full](images/qgis_nav2.png)
-
----
-
-#View map data
-![img-center-90](images/qgis_nav5.png)
-
----
-
-#View attributes
-![img](images/qgis_nav7.png)
-
----
-
-#Style data
-![img-center-90](images/labeling3.png)
-
----
-
-#Filter data
-![img-center-60](images/filter1.png)
-
----
-
-#Spatial Joins
-
-![img-right-30](images/join1.png)
-
---
-
-##Point to Polygon
-+ Relate points inside a polygon to that polygon (ex. count the number of points)
-
---
-
-##Polygon to Point 
-+ Points can take on value of enclosing polygon
-
----
-
-#Layers
+#Base Maps
 ![img-full](images/map1.png)
 ####Image Source: http://www.geocontrolling.com/co-je-gis.htm
+
+---
+
+#Base Maps       
++ Adding base maps will give your map context
+--
+
++ In QGIS, you need a plugin to use base maps
+--
+
++ There are several, but we're only going to use one of them
+
+---
+
+#Base Map Plugin
++ From the Plugins menu, select "Manage and Install Plugins"
+
+![img-center-60](images/basemap2.png)
+
+---
+
+#Base Map Plugin
+
++ Search for the QuickMapServices plugin and install it
+
+![img-center-75](images/basemap3_box.png)
+
+---
+
+#Setting Up QuickMapServices Plugin
++ Go to the Settings Menu
+![img-center-80](images/basemap4.png)
+
+---
+
+#Setting Up QuickMapServices Plugin
++ Get the contributed packs
+![img-center-80](images/basemap5_box.png)
+
+---
+
+#Setting Up QuickMapServices Plugin
++ Revel in all the beautiful base maps
+![img-right-30](images/basemap6.png)
+
+---
+
+#Select a base map from the list
+![img-center-80](images/p1_basemap.png)
+
 ---
 
 #Shapefiles
@@ -234,6 +246,58 @@ class:center,middle
 --
 
 ![img-center-80](images/file_struct1.png)
+
+---
+
+#Download a shapefile
+1. [Click this link](data/boros/boros.zip) and download the file to your desktop
+2. Unzip the file
+---
+
+#Import a shapefile
+![img-center-50](images/qgis_nav2.png)
+
+![img-left-45](images/qgis_nav3_box.png)
+![img-right-55](images/qgis_nav4.png)
+
+---
+
+#Import a shapefile
+![img-center-80](images/p1_boro_shp.png)
+
+---
+
+class:center,middle
+#Adding a CSV file
+
+---
+
+#What is a CSV?
+![img-center-100](images/csv_311_ex.png)
+
+---
+
+#Import a CSV
++ [Right click this link](data/dot_311_20160201_20160207.csv)
++ Select "Save link as" 
++ Save the file (`dot_311_20160201_20160207.csv`) to your desktop
+
+---
+
+#Adding a CSV File
+![img-center-70](images/add_csv1.png)
+
+![img-center-75](images/add_csv2_box_crop.png)
+
+---
+
+#Adding CSV Data
+![img](images/p1_csv_box.png)
+
+---
+
+#Adding CSV Data
+![img](images/add_csv5.png)
 
 ---
 
@@ -295,18 +359,118 @@ class:center,middle
 
 ---
 
+#Adding CSV Data
+![img-center-55](images/add_csv6_box.png)
+
+---
+
+#Adding CSV Data
+![img-center-80](images/p1_points_poly.png)
+
+---
+
+#Styling the map
+
+---
+
+#Attribute Table (Right click on layer)
+![img-left-40](images/qgis_nav6_crop.png)
+![img-right-55](images/qgis_nav7.png)
+
+---
+
+<!-- Styling -->
+#Styling Features
++ Right-click the layer and select the Properties option
++ Select "Style," and finally, choose "Categorized":
+        
+![img-90](images/styling1.png)
+
+---
+
+#Styling Features
++ Select the column that has the data you want to style:
+    
+![img-center-60](images/styling2.png)
+
+![img](images/styling3_box.png)
+
+---
+
+#Styling Features
+![img](images/styling4_box.png)
+
+---
+
+#Styling Features
+![img-center-80](images/p1_style.png)
+
+---
+
 #Your turn
-+ [Download this shapefile](data/boros/boros.zip) to your desktop
-+ Unzip the file and open the shapefile in QGIS
-+ [Download this CSV](data/Parking_Facilities.csv) to your desktop
-+ Add the CSV to QGIS
-+ Add a basemap
-+ Style the polygons however you'd like
-+ Style the labels
++ Style the points and polygons however you'd like
++ Try adding labels to the data
++ Get familiar with the interface
 
 ---
 
 #5 Min Break
+
+---
+
+
+class:center,middle
+#What can you do with QGIS?
+<!-- Short review of QGIS after doing exercise -->
+
+
+---
+
+#Load data
+![img-full](images/qgis_nav2.png)
+
+---
+
+#View map data
+![img-center-90](images/qgis_nav5.png)
+
+---
+
+#View attributes
+![img](images/qgis_nav7.png)
+
+---
+
+#Style data
+![img-center-90](images/labeling3.png)
+
+---
+
+#Filter data
+![img-center-60](images/filter1.png)
+
+---
+
+#Spatial Joins
+
+![img-right-30](images/join1.png)
+
+--
+
+##Point to Polygon
++ Relate points inside a polygon to that polygon (ex. count the number of points)
+
+--
+
+##Polygon to Point 
++ Points can take on value of enclosing polygon
+
+---
+
+#Layers
+![img-full](images/map1.png)
+####Image Source: http://www.geocontrolling.com/co-je-gis.htm
+
 
 ---
 
