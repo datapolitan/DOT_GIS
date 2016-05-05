@@ -55,6 +55,10 @@ img[alt=img-left-50]{
   width:50%;
   float:left;
 }
+img[alt=img-left-55]{
+  width:55%;
+  float:left;
+}
 img[alt=img-left-60]{
   width:60%;
   float:left;
