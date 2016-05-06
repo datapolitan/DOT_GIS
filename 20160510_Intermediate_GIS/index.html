@@ -480,12 +480,31 @@ class:center,middle
 
 ---
 
+class:center,middle
 #What is a spatial database?
-+
 
 ---
 
-#Relational Databases 101
+#What is a database?
+
+--
+
+![img-center-90](images/databases.jpg)
+#####Source: http://blog.hackerrank.com/new-domain-tuesday-hackerrank-reveals-data-structure-database-sql-challenges/
+
+---
+
+#What is a database?
+
+--
+
++ Another source of data
+--
+
++ A program that often runs on a computer other than the one you're using (a server)
+--
+
++ You can connect to databases through many types of software, including QGIS
 
 ---
 
@@ -495,13 +514,81 @@ class:center,middle
 
 #Why use a spatial database?
 
+--
+
++ One authoritative copy of data
+--
+
++ Multiple people can use and edit it at once
+--
+
++ Generally is going to be faster than using a shapefile
+
 ---
 
 #Drawbacks of using a spatial database
 
+--
+
++ Not as simple as a CSV file or shapefile
+--
+
++ It takes some setup to connect to a database
+--
+
++ Need permission to connect to a database
+--
+
++ Need to know SQL to get the most out of it
+
 ---
 
 #Let's talk datatypes
+
+--
+
+![img-center-80](images/qgis_nav7.png)
+
+--
+
++ In the attribute table you will usually see *text*, *numbers*, and *dates*
+
+---
+
+#Let's talk datatypes
+
+![img-center-80](images/qgis_attribute_table_number.png)
+
+--
+
+##Numbers will be right aligned
+
+---
+
+#Let's talk datatypes
+
+![img-center-80](images/qgis_attribute_table_string.png)
+
+--
+
+##Text will be left aligned
+
+---
+
+#Database datatypes
+
+--
+
++ Like attribute tables, database columns have types
+--
+
++ Numbers, text (*strings*), and dates are the main types
+--
+
++ Spatial databases add *geometry* columns
+--
+
++ Geometry columns let us map our data
 
 ---
 
