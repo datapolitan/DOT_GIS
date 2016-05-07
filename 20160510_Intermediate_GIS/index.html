@@ -862,41 +862,48 @@ class:center,middle
 --
 
 #How do we answer this?
-
+<!-- ![img-center-40](images/nycd_bike_injuries_not_bike_route.png) -->
 
 ---
 
 #Steps to answer
 --
 
-1. Join bicyclist injuries with bike lanes to find injuries that happen on or near bike lanes
+1. Buffer bicyclist injuries (points)
 --
 
-2. Invert the selection to find injuries that happened off of bike lanes
+2. Select injuries that happened near bike lanes (intersection of buffers with bike lane) 
 --
 
-3. Count the number of injuries off of bike lanes by community boards
+3. Invert the selection to find injuries that happened off of bike lanes
 --
 
-4. Style the result
+4. Count the number of injuries off of bike lanes by community boards
+--
+
+5. Style the result
 
 ---
 
-#Step 1: Join bicyclist injuries with bike lanes
-+ Buffer bicyclist injuries
+#What we're going to create
+![img-center-90](images/nycd_bike_injuries_not_bike_route.png)
+
+---
+
+#Step 1: Buffer bicyclist injuries
 
 ![img-center-70](images/buffer1.png)
 
 ---
 
-#Step 1: Join bicyclist injuries with bike lanes
-+ Buffer bicyclist injuries (15ft around injury locations)
+#Step 1: Buffer bicyclist injuries
++ Create a 15ft around injury locations
 
 ![img-center-60](images/buffer2.png)
 
 ---
 
-#Buffering Features
+#Buffering features
 --
 
 + Gives "size" to 2-D features
@@ -923,12 +930,117 @@ class:center,middle
 
 ---
 
-# Step 1: Join bicyclist injuries with bike lanes
-+ Check the projections
+#SRID Map Units
+--
 
-![img-center-90](images/bike_route_prop_box.png)
++ Each projection has a base unit of distance
+--
 
-![img-center-90](images/injury_prop_box.png)
++ For WGS84 it's decimal degrees 
+--
+
++ How far is 15 decimal degrees?
+--
+
++ Have to convert projection to measure distance in projection that matches desired units of measure
+--
+
++ Let’s use 2263 (NYS Plane Long Island Sound)
+--
+
++ (The Map Units are in feet)
+
+---
+
+#Pop Quiz
++ Reproject the `injuries` layer to SRID 2263
+--
+
++ Right click the layer and select `Save As...`
+--
+
++ Select the new projection
+--
+
++ Click `OK`
+--
+
+
+![img-center-50](https://c2.staticflickr.com/8/7306/8731759135_58989f9e56.jpg)
+
+---
+
+#Buffering features in QGIS
+![img-right-45](images/buffer6.png)
++ Make sure you select your reprojected layer
++ Set the distance to 15 (this time it'll be feet)
++ Set your output shapefile
++ Select `OK`
+
+---
+
+#Buffering features in QGIS
+![img-center-70](images/buffer7.png)
+
+---
+
+#Step 2: Select injuries near bike lanes
+![img-center-70](images/buffer8.png)
+
+---
+
+#Select by location in QGIS
++ There's a plug-in for that
+
+![img-left-55](images/spatialq1.png)
+![img-right-43](images/spatialq2.png)
+
+---
+
+#Select by location in QGIS
+![img-right-40](images/spatialq3.png)
++ Select the buffered injuries layer
++ Select `Intersects`
++ Select the bike routes layer
++ Select `Create new selection`
++ Click `Apply`
+
+---
+
+#Select by location in QGIS
+![img-right-70](images/spatialq4_box2.png)
++ Click `Close`
+
+
+---
+
+#What did we just do?
+--
+
+1. Created a 15ft buffer around bicyclist injuries
+--
+
+2. Selected injuries that intersected a bike lane<br>
+--
+
+(Meaning it happened on or near a bike lane)
+--
+
+
+#Still to do
+--
+
++ Find the injuries that happened off of bike lanes
+--
+
++ Count injuries off bike lane by Community Board
+--
+
++ Style the result
+
+---
+
+#Step 3: Find injuries that happened off of bike lanes
 
 ---
 
