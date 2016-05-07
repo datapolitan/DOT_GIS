@@ -840,13 +840,102 @@ class:center,middle
 + Why did we do it?
 --
 
-+ What was the problem we faced?
++ What was the problem we had with the data?
 --
 
-+ What did we do to fix it?
++ What did we do to solve the problem?
 --
 
 + Is this a problem you've faced before?
+
+---
+
+class:center,middle
+#Now let's ask something a little more complicated
+
+---
+
+#Bicyclist Injuries
++ Which community board has the highest number of bicyclist injuries off of bicycle paths?
+
+![img-right-45](images/buffer0.png)
+--
+
+#How do we answer this?
+
+
+---
+
+#Steps to answer
+--
+
+1. Join bicyclist injuries with bike lanes to find injuries that happen on or near bike lanes
+--
+
+2. Invert the selection to find injuries that happened off of bike lanes
+--
+
+3. Count the number of injuries off of bike lanes by community boards
+--
+
+4. Style the result
+
+---
+
+#Step 1: Join bicyclist injuries with bike lanes
++ Buffer bicyclist injuries
+
+![img-center-70](images/buffer1.png)
+
+---
+
+#Step 1: Join bicyclist injuries with bike lanes
++ Buffer bicyclist injuries (15ft around injury locations)
+
+![img-center-60](images/buffer2.png)
+
+---
+
+#Buffering Features
+--
+
++ Gives "size" to 2-D features
+--
+
++ Points don't have area
+--
+
++ Lines have length but don't have width
+--
+
++ Allows for analysis of overlap and intersection
+
+---
+
+#Buffering features in QGIS
+![img-left-50](images/buffer3.png)
+![img-right-48](images/buffer4_box.png)
+
+---
+
+#Oops
+![img-center-70](images/buffer5.png)
+
+---
+
+# Step 1: Join bicyclist injuries with bike lanes
++ Check the projections
+
+![img-center-90](images/bike_route_prop_box.png)
+
+![img-center-90](images/injury_prop_box.png)
+
+---
+
+#Your Turn
++ Filter the result for your borough
++ Style a map of just the community boards in your borough
++ Develop a hypothesis as to why the injuries are happening in those areas
 
 ---
 class:center,middle
