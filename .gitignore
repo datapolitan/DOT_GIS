@@ -1,6 +1,7 @@
 *.qgs*
 *.mxd
 *.pptx
+*.pages
 311byCD_finalmap.png
 20160101_20160401_DOT_311_Service_Requests.*
 20160413_Introduction_to_GIS_Fundamentals/images/AddtlScreenShots/*
@@ -10,3 +11,9 @@ Lincoln_Square_BID_Business_List.csv
 bike_exercise.md
 participant_workbook*
 20160510_Intermediate_GIS/images/unused/
+20160510_Intermediate_GIS/data/nyc-bike-routes-2015/nyc_bike_routes_2015_2263.*
+20160428_Introduction_to_GIS_Fundamentals/images/extent.png
+20160428_Introduction_to_GIS_Fundamentals/images/zoom.png
+20160510_Intermediate_GIS/rejects.md
+code/
+data/
