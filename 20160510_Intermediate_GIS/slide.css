@@ -51,6 +51,10 @@ img[alt=img-left-45]{
   width:45%;
   float:left;
 }
+img[alt=img-left-48]{
+  width:48%;
+  float:left;
+}
 img[alt=img-left-50]{
   width:50%;
   float:left;
@@ -91,6 +95,10 @@ img[alt=img-right-40]{
 }
 img[alt=img-right-45]{
   width:45%;
+  float:right;
+}
+img[alt=img-right-48]{
+  width:48%;
   float:right;
 }
 img[alt=img-right-50]{
