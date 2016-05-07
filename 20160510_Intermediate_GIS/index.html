@@ -749,11 +749,11 @@ class:center,middle
 
 ```
 SELECT *
-FROM crashes
+FROM injuries
 ```
 --
 
-#In english: "select all the crashes"
+#In english: "select all the injuries"
 
 ---
 
@@ -761,12 +761,12 @@ FROM crashes
 
 ```
 SELECT *
-FROM crashes
+FROM injuries
 WHERE BOROUGH = 'QUEENS'
 ```
 --
 
-#In english: "select all the crashes in Queens"
+#In english: "select all the injuries in Queens"
 
 ---
 
@@ -777,7 +777,171 @@ WHERE BOROUGH = 'QUEENS'
 
 ---
 
-#(Begin Practical Exercise 4)
+class:center,middle
+#Let's use SQL in QGIS
+
+---
+
+# DB Manager
+--
+
++ One way to see your database *connections* and *tables*
+--
+
++ Also a way to run SQL queries on your tables
+
+---
+
+# DB Manager
+--
+
+![img-center-60](images/db-manager-menu.png)
+
+---
+
+![img-center-90](images/db-manager.png)
+
+---
+
+![img-center-90](images/db-manager-schema.png)
+
+---
+
+![img-center-90](images/db-manager-injuries.png)
+
+---
+
+![img-center-90](images/db-manager-open-sql-window.png)
+
+---
+
+![img-center-90](images/db-manager-sql-window.png)
+
+---
+
+![img-center-90](images/db-manager-queens.png)
+
+---
+
+![img-center-90](images/db-manager-queens-execute-button.png)
+
+---
+
+![img-center-90](images/db-manager-queens-execute.png)
+
+---
+
+![img-center-90](images/db-manager-queens-execute-load-new-layer-checkbox.png)
+
+---
+
+![img-center-90](images/db-manager-load-as-new-layer.png)
+
+---
+
+![img-center-90](images/db-manager-load-as-new-layer-load-button.png)
+
+---
+
+![img-center-90](images/injuries-queens.png)
+
+---
+
+#Spatial joins in SQL
+
+--
+
++ You can do the same spatial joins you would do in QGIS using SQL
+--
+
++ They give you more control than QGIS does
+--
+
++ And you don't have to create new shapefiles
+
+---
+
+#Spatial joins in SQL
+
+--
+
+## Let's start with a points in polygon join:
+
+--
+
+```
+SELECT nyc_boro.*, COUNT(injuries)
+FROM training.nyc_boro
+JOIN training.injuries ON ST_Within(injuries.geom, nyc_boro.geom)
+GROUP BY nyc_boro.gid
+```
+
+---
+
+#Line by line:
+
+```
+SELECT nyc_boro.*, COUNT(injuries)
+```
+
+##"Select all of the nyc_boro columns and the count of injuries"
+
+---
+
+#Line by line:
+
+```
+FROM training.nyc_boro
+```
+
+##"Use the nyc_boro table"
+
+---
+
+#Line by line:
+
+```
+JOIN training.injuries ON ST_Within(injuries.geom, nyc_boro.geom)
+```
+
+##"Join with injuries, associate injuries with the borough they are within"
+
+---
+
+#Line by line:
+
+```
+GROUP BY nyc_boro.gid
+```
+
+##"Count by borough"
+
+---
+
+#In general we can write a points in polygon join like this:
+
+```
+SELECT polygons.*, COUNT(points)
+FROM polygons
+JOIN points ON ST_Within(points.geom, polygons.geom)
+GROUP BY polygons.unique_id
+```
+
+--
+
+## Just replace *points* and *polygons* with the table names
+
+---
+
+![img-center-90](images/db-manager-join.png)
+
+---
+
+![img-center-90](images/db-manager-join-results.png)
+
+---
+
+![img-center-90](images/spatial-join-attribute-table.png)
 
 ---
 
