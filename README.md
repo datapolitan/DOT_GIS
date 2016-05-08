@@ -74,7 +74,7 @@ A full-day course for up to 20 employees familiar with how to load and visualize
 <a id="intermediate-goals"></a>
 ####Goals
 + Provide a review of key spatial concepts and GIS functions in QGIS
-Demonstrate the process for connecting to a spatial relational database in QGIS
++ Demonstrate the process for connecting to a spatial relational database in QGIS
 + Introduce the structured query language (SQL) for querying an open source relational database (PostGIS)
 + Practice writing queries in SQL to accomplish key spatial analytical tasks with real-world data to answer meaningful analytical questions
 
