@@ -1539,7 +1539,7 @@ GROUP BY nyc_boro.gid
 SELECT nyc_boro.*, COUNT(injuries)
 ```
 
-##"Select all of the nyc_boro columns and the count of injuries"
+##"Select all of the `nyc_boro` columns and the count of `injuries`"
 
 ---
 
@@ -1549,7 +1549,7 @@ SELECT nyc_boro.*, COUNT(injuries)
 FROM training.nyc_boro
 ```
 
-##"Use the nyc_boro table"
+##"Use the `nyc_boro` table"
 
 ---
 
@@ -1559,7 +1559,7 @@ FROM training.nyc_boro
 JOIN training.injuries ON ST_Within(injuries.geom, nyc_boro.geom)
 ```
 
-##"Join with injuries, associate injuries with the borough they are within"
+##"Join with `injuries`, associate `injuries` with the `nyc_boro` they are within"
 
 ---
 
