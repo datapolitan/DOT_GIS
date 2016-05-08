@@ -1089,11 +1089,169 @@ class:center,middle
 class:center,middle
 #Welcome Back
 
+<iframe width="700" height="450" src="https://www.youtube.com/embed/KUF_Ckv8HbE" frameborder="0" allowfullscreen></iframe>
+
+---
+
+class: center,middle
+#What's one thing you learned this morning that you found useful, interesting, and/or helpful?
+
+---
+
+class:center,middle
+#What do you think of QGIS so far?
+
+---
+
+#Some Other GIS Tools
+
+![img-full](images/gis.png)
+
+---
+
+#[ArcGIS](http://www.esri.com/software/arcgis/arcgis-for-desktop)
+
+![img-center-large](images/arcgis.jpg)
+[Source](http://www.esri.com/news/arcuser/1012/a-workflow-for-creating-and-sharing-maps.html)
+
+---
+
+#[Adobe Illustrator](http://www.adobe.com/products/illustrator.html)/[Mapublisher](http://www.avenza.com/mapublisher)
+![img-full](images/illustrator.jpg)
+[Source](http://www.avenza.com/resources/blog/2011/06/28/how-get-open-street-map-data-adobe-illustrator-mapublisher)
+
+---
+
+#[Google Earth](https://www.google.com/earth/)
+
+![img-center-80](images/google_earth.png)
+
+---
+
+#[Google Fusion Tables](https://sites.google.com/site/fusiontablestalks/stories)
+<iframe width="100%" height="430" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col54%2C+col55+from+1dNtdy7FuBBZ2qTxX7jgZ5Dig8n96oxRrWFjuhYpJ+where+col3+%3E%3D+0+and+col3+%3C%3D+4+and+col26+%3D+2+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=40.844685&amp;lng=-73.915349&amp;t=1&amp;z=12&amp;l=col54&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=26&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG"></iframe>
+Source: [NYC Open Data 311 Noise Complaints, 1 Jan - 20 May 2014, Between Midnight and 4 am in the Bronx](https://www.google.com/fusiontables/DataSource?docid=1dNtdy7FuBBZ2qTxX7jgZ5Dig8n96oxRrWFjuhYpJ#map:id=3)
+
+---
+
+#Proprietary vs Open Source Software
+--
+
++ Proprietary software source code is owned by an individual or an organization and tightly restricted (usually for profit)
+--
+
++ Open source software source code is freely available to anyone for download, alteration, and republishing
+
+---
+
+#Proprietary vs Open Source Software
+
+--
+
++ Proprietary software code is generally supported by a team of paid professionals working for the organization that owns the code
+--
+
++ Open source software code is generally supported by a mix of paid and volunteer professionals that contribute changes back to the community
+---
+
+#Proprietary vs Open Source Software
+--
+
++ Proprietary software is often available only by purchasing a license
+--
+
++ Open source software is free to use though there generally a license that specifies the restrictions (if any) on its use and reuse
+--
+
++ Companies using open source software may charge for the use of the software through their proprietary implementations or via their infrastructure
+
+---
+
+class:center,middle
+#Examples of Open Source Mapping Software
+
+
+---
+
+#[CartoDB](https://cartodb.com/)
+<iframe width="100%" height="500" frameborder="0" src="https://richard-datapolitan.cartodb.com/viz/84289396-125c-11e6-89ae-0e674067d321/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+---
+
+class:center,middle
+#Some things about QGIS...
+
+---
+
+#QGIS - The Good
+--
+
++ Open-source software that’s freely available
+--
+
++ Works with lots of different data types, including shapefiles, KML (Google Earth), GeoJSON, and text files
+--
+
++ Works with various spatial databases
+--
+
++ Strong community developing features and plug-ins
+---
+
+#QGIS - The Bad
+--
+
++ Not an enterprise software like ESRI ArcGIS
+--
+
++ The visual style is a little clunky
+--
+
++ Features tend to change between versions (moving around, menu option changes, etc) 
+--
+
++ Major versions tend to have major feature changes
+--
+
++ Plug-ins tend not to work with newer versions
+--
+
++ And it crashes (as you've probably already experienced)
+
+---
+
+#And of course...
+![img-ful](images/bug.png)
+
+---
+
+#QGIS - The Bug-y
+--
+
++ Projects with different CRS layers tend to get misaligned when zooming
+--
+
++ _Zoom in and then back out to fix_
+--
+
++ Plug-ins sometimes don't work like they're supposed to
+--
+
++ _Save your project, close QGIS, re-open, and try again_
+--
+
++ Other odd behavior that they’re hopefully working on
+--
+
++ _File them here: https://hub.qgis.org/wiki/17/Bugreports_
+
 ---
 
 #Goals for the Afternoon
++ Discuss QGIS and other GIS tools
++ Provide a basic understanding of open-source technology as it relates to GIS tools
 + Introduce Structured Query Language for querying databases
-+ Practice using SQL for querying spatial data
++ Practice using SQL for querying and processing spatial data
++ Introduce heatmaps and practice creating them in QGIS
 
 ---
 
@@ -1362,6 +1520,15 @@ GROUP BY polygons.unique_id
 + Use DB Manager and SQL to do a points in polygon join to count injuries in community disctricts (table *nyc_cd*)
 + Add the results as a layer in QGIS
 + Style the community districts by the number of injuries
+
+---
+
+class:center,middle
+#10 Min Break
+
+![img-center-50](https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/10475028_1632667213653494_1437967908_n.jpg)
+
+###Source: https://www.instagram.com/p/9stzddj8-Q/
 
 ---
 
