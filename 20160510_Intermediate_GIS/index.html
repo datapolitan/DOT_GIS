@@ -1076,12 +1076,12 @@ class:center,middle
 ---
 
 #Goals for the Afternoon
-+ Demonstrate how to query databases
++ Introduce Structured Query Language for querying databases
++ Practice using SQL for querying spatial data
 
 ---
 
 #SQL
-
 --
 
 + Structured Query Language
@@ -1091,7 +1091,6 @@ class:center,middle
 ---
 
 #SQL queries
-
 --
 
 + Can *view* data
@@ -1122,38 +1121,36 @@ class:center,middle
 
 ---
 
-#Databases are great at these types of questions
+#Databases are great at questions like these
 --
 
-##It's what they were made for
++ It's what they were made for
 --
 
-##SQL will let us ask these questions
++ SQL will let us ask these questions
 
 ---
 
 #SQL looks like:
 
-```
+```sql
 SELECT *
 FROM injuries
 ```
 --
 
-#In english: "select all the injuries"
++ In english: "select all the injuries"
 
----
+--
 
-#SQL looks like:
-
-```
+```sql
 SELECT *
 FROM injuries
 WHERE BOROUGH = 'QUEENS'
 ```
 --
 
-#In english: "select all the injuries in Queens"
++ In english: "select all the injuries in Queens"
 
 ---
 
@@ -1182,60 +1179,71 @@ class:center,middle
 # DB Manager
 --
 
-![img-center-60](images/db-manager-menu.png)
+![img-center-45](images/db_manager_menu.png)
 
 ---
 
-![img-center-90](images/db-manager.png)
+# DB Manager
+![img-center-90](images/db_manager.png)
 
 ---
 
-![img-center-90](images/db-manager-schema.png)
+# DB Manager
+![img-center-90](images/db_manager_schema.png)
 
 ---
 
-![img-center-90](images/db-manager-injuries.png)
+# DB Manager
+![img-center-90](images/db_manager_injuries.png)
 
 ---
 
-![img-center-90](images/db-manager-open-sql-window.png)
+# DB Manager
+![img-center-90](images/db_manager_open_sql_window.png)
 
 ---
 
-![img-center-90](images/db-manager-sql-window.png)
+# DB Manager
+![img-center-90](images/db_manager_sql_window.png)
 
 ---
 
-![img-center-90](images/db-manager-queens.png)
+# Simple SQL Query
+![img-center-90](images/db_manager_queens.png)
 
 ---
 
-![img-center-90](images/db-manager-queens-execute-button.png)
+# Simple SQL Query
+![img-center-90](images/db_manager_queens_execute_button.png)
 
 ---
 
-![img-center-90](images/db-manager-queens-execute.png)
+# Simple SQL Query
+![img-center-90](images/db_manager_queens_execute.png)
 
 ---
 
-![img-center-90](images/db-manager-queens-execute-load-new-layer-checkbox.png)
+# Add Query Result to Map
+![img-center-90](images/db_manager_queens_execute_load_new_layer_checkbox.png)
 
 ---
 
-![img-center-90](images/db-manager-load-as-new-layer.png)
+# Add Query Result to Map
+![img-center-90](images/db_manager_load_as_new_layer.png)
 
 ---
 
-![img-center-90](images/db-manager-load-as-new-layer-load-button.png)
+# Add Query Result to Map
+![img-center-90](images/db_manager_load_as_new_layer_load_button.png)
 
 ---
 
-![img-center-90](images/injuries-queens.png)
+# Add Query Result to Map
+![img-center-80](images/injuries_queens.png)
 
 ---
 
 #Spatial joins in SQL
-
 --
 
 + You can do the same spatial joins you would do in QGIS using SQL
@@ -1249,14 +1257,13 @@ class:center,middle
 ---
 
 #Spatial joins in SQL
+--
+
++ Let's start with a points in polygon join:
 
 --
 
-## Let's start with a points in polygon join:
-
---
-
-```
+```sql
 SELECT nyc_boro.*, COUNT(injuries)
 FROM training.nyc_boro
 JOIN training.injuries ON ST_Within(injuries.geom, nyc_boro.geom)
@@ -1267,7 +1274,7 @@ GROUP BY nyc_boro.gid
 
 #Line by line:
 
-```
+```sql
 SELECT nyc_boro.*, COUNT(injuries)
 ```
 
@@ -1277,7 +1284,7 @@ SELECT nyc_boro.*, COUNT(injuries)
 
 #Line by line:
 
-```
+```sql
 FROM training.nyc_boro
 ```
 
@@ -1287,7 +1294,7 @@ FROM training.nyc_boro
 
 #Line by line:
 
-```
+```sql
 JOIN training.injuries ON ST_Within(injuries.geom, nyc_boro.geom)
 ```
 
@@ -1297,7 +1304,7 @@ JOIN training.injuries ON ST_Within(injuries.geom, nyc_boro.geom)
 
 #Line by line:
 
-```
+```sql
 GROUP BY nyc_boro.gid
 ```
 
@@ -1307,7 +1314,7 @@ GROUP BY nyc_boro.gid
 
 #In general we can write a points in polygon join like this:
 
-```
+```sql
 SELECT polygons.*, COUNT(points)
 FROM polygons
 JOIN points ON ST_Within(points.geom, polygons.geom)
