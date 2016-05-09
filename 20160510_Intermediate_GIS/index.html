@@ -890,7 +890,7 @@ class:center,middle
 
 ---
 
-#Bicyclist Injuries
+#Exercise 3 - Bicyclist Injuries
 + Which community board has the highest number of bicyclist injuries off of bicycle paths?
 
 ![img-right-45](images/buffer0.png)
@@ -965,31 +965,26 @@ class:center,middle
 
 ---
 
-#SRID Map Units
+#Map Units
 --
 
 + Each projection has a base unit of distance
 --
 
-+ For WGS84 it's decimal degrees 
++ For WGS84 it's decimal degrees<br>
+--
+_Know how big 15 decimal degrees are?_
 --
 
-+ How far is 15 decimal degrees?
++ Best to convert to a projection with simple map units
 --
 
-+ Have to convert projection to measure distance in projection that matches desired units of measure
---
-
-+ Let’s use 2263 (NYS Plane Long Island Sound)
---
-
-+ (The Map Units are in feet)
-
++ For NYC, EPSG:2263 is best (the map units are in feet)
 ---
 
 #Pop Quiz
 ![img-right-50](https://c2.staticflickr.com/8/7306/8731759135_58989f9e56.jpg)
-+ Reproject the `injuries` layer to SRID 2263
++ Reproject the `injuries` layer to EPSG:2263
 --
 
 + Right click the layer and select `Save As...`
