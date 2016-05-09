@@ -1600,6 +1600,17 @@ GROUP BY nyc_boro.gid
 
 ---
 
+# All together:
+
+```sql
+SELECT nyc_boro.*, COUNT(injuries)
+FROM nyc_boro
+JOIN injuries ON ST_Within(injuries.geom, nyc_boro.geom)
+GROUP BY nyc_boro.gid
+```
+
+--
+
 #In general we can write a points in polygon join like this:
 
 ```sql
@@ -1715,6 +1726,14 @@ class:center,middle
 
 ---
 
+# Your turn
++ Filter DOT 311 requests (`dot_311`) by borough and by type
++ Join filtered requests to community districts (`nyc_cd`)
++ Create a choropleth of the number complaints in each community district
++ Create a heatmap of complaints in your borough
+
+---
+
 class:center,middle
 #[Click to submit your work](https://script.google.com/a/macros/datapolitan.com/s/AKfycbwMcE5pcJwZHdbSCN_2epwaXnRLSRPaLbHCAhxaZJ79UXaRpQ_l/exec)
 
@@ -1722,6 +1741,55 @@ class:center,middle
 
 class:center,middle
 #Presentations
+
+---
+
+# Geocoding
+
+--
+
+![img-center-100](images/google-maps-geocode.png)
+
+---
+
+# Geocoding
+
+![img-center-100](images/google-maps-geocode-1.png)
+
+---
+
+# Geocoding
+
+![img-center-100](images/google-maps-geocode-2.png)
+
+---
+
+# Geocoding in QGIS
+
+--
+
++ You'll want a CSV with the *street address*, *city*, and *state* in separate columns
+--
+
++ And enable the MMQGIS plugin
+
+---
+
+# Geocoding in QGIS
+
+![img-center-70](images/mmqgis.png)
+
+---
+
+# Geocoding in QGIS
+
+![img-center-70](images/mmqgis-menu.png)
+
+---
+
+# Geocoding in QGIS
+
+![img-center-70](images/mmqgis-geocode.png)
 
 ---
 
