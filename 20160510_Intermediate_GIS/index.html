@@ -1407,6 +1407,24 @@ WHERE BOROUGH = 'QUEENS'
 
 ---
 
+#You can combine conditions
+
+```sql
+SELECT *
+FROM injuries
+WHERE borough = 'QUEENS' AND contributi = 'Fatigued/Drowsy'
+```
+
+--
+
+```sql
+SELECT *
+FROM injuries
+WHERE contributi = 'Outside Car Distraction' OR contributi = 'Fatigued/Drowsy'
+```
+
+---
+
 #This should feel pretty familiar
 --
 
