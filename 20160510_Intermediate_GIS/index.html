@@ -1335,25 +1335,9 @@ class:center,middle
 
 ---
 
-#SQL
---
+# Back to databases
 
-+ Structured Query Language
---
-
-+ The language databases understand
----
-
-#SQL queries
---
-
-+ Can *view* data
---
-
-+ and *change* data
---
-
-##We're going to stick to *viewing* data
+![img-center-90](images/databases.jpg)
 
 ---
 
@@ -1382,6 +1366,28 @@ class:center,middle
 --
 
 + SQL will let us ask these questions
+
+---
+
+#SQL
+--
+
++ Structured Query Language
+--
+
++ The language databases understand
+---
+
+#SQL queries
+--
+
++ Can *view* data
+--
+
++ and *change* data
+--
+
+##We're going to stick to *viewing* data
 
 ---
 
@@ -1598,7 +1604,7 @@ GROUP BY nyc_boro.gid
 
 ---
 
-# All together:
+## All together:
 
 ```sql
 SELECT nyc_boro.*, COUNT(injuries)
@@ -1609,7 +1615,7 @@ GROUP BY nyc_boro.gid
 
 --
 
-#In general we can write a points in polygon join like this:
+## More generally:
 
 ```sql
 SELECT polygons.*, COUNT(points)
@@ -1620,7 +1626,7 @@ GROUP BY polygons.unique_id
 
 --
 
-## Just replace *points* and *polygons* with the table names, *unique_id* with a unique id from your polygons table
+### Just replace *points* and *polygons* with the table names, *unique_id* with a unique id from your polygons table
 
 ---
 
@@ -1639,8 +1645,53 @@ GROUP BY polygons.unique_id
 
 ---
 
+# `ST_Within`
+
+--
+
++ A *spatial* SQL function
+--
+
++ Similar to other SQL conditions (`borough = 'QUEENS'`)
+--
+
++ ...but we're checking whether the geometries of one table are *within* geometries from another
+
+---
+
+# `ST_Within`
+
+![img-center-40](images/st-within.gif)
+#####Source: https://www.ibm.com/support/knowledgecenter/SSGU8G_11.50.0/com.ibm.spatial.doc/relation1033234.htm%23relation1033234
+
+---
+
+# Spatial SQL functions
+
+--
+
++ There are many more you can use
+--
+
++ For example, `ST_Crosses`:
+
+![img-center-40](images/st-crosses.png)
+
+---
+
+# Spatial SQL functions
+
+--
+
++ We're only covering `ST_Within` today
+--
+
++ But we will give you resources for finding other spatial SQL functions
+
+---
+
 #Your turn
-+ Use DB Manager and SQL to do a points in polygon join to count injuries in community disctricts (table *nyc_cd*)
++ Use DB Manager and SQL to do a points in polygon join to count injuries in community disctricts (table `nyc_cd`)
 + Add the results as a layer in QGIS
 + Style the community districts by the number of injuries
 
