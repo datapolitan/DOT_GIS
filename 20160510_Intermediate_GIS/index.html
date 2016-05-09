@@ -1526,8 +1526,8 @@ class:center,middle
 
 ```sql
 SELECT nyc_boro.*, COUNT(injuries)
-FROM training.nyc_boro
-JOIN training.injuries ON ST_Within(injuries.geom, nyc_boro.geom)
+FROM nyc_boro
+JOIN injuries ON ST_Within(injuries.geom, nyc_boro.geom)
 GROUP BY nyc_boro.gid
 ```
 
@@ -1546,7 +1546,7 @@ SELECT nyc_boro.*, COUNT(injuries)
 #Line by line:
 
 ```sql
-FROM training.nyc_boro
+FROM nyc_boro
 ```
 
 ##"Use the `nyc_boro` table"
@@ -1556,7 +1556,7 @@ FROM training.nyc_boro
 #Line by line:
 
 ```sql
-JOIN training.injuries ON ST_Within(injuries.geom, nyc_boro.geom)
+JOIN injuries ON ST_Within(injuries.geom, nyc_boro.geom)
 ```
 
 ##"Join with `injuries`, associate `injuries` with the `nyc_boro` they are within"
