@@ -1407,6 +1407,24 @@ WHERE BOROUGH = 'QUEENS'
 
 ---
 
+#You can combine conditions
+
+```sql
+SELECT *
+FROM injuries
+WHERE borough = 'QUEENS' AND contributi = 'Fatigued/Drowsy'
+```
+
+--
+
+```sql
+SELECT *
+FROM injuries
+WHERE contributi = 'Outside Car Distraction' OR contributi = 'Fatigued/Drowsy'
+```
+
+---
+
 #This should feel pretty familiar
 --
 
@@ -1493,6 +1511,12 @@ class:center,middle
 
 # Add Query Result to Map
 ![img-center-80](images/injuries_queens.png)
+
+---
+
+# Your turn
++ Use DB Manager and SQL to select the injuries for the Bronx
++ Add the results as a layer in QGIS
 
 ---
 
