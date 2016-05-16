@@ -1,7 +1,7 @@
 ##Summary
 A half-day course for up to 20 employees covering the key concepts of how to create truthful and visually-compelling visualizations of important data. The course will cover how to create impactful charts, graphs, and other information visualizations in order to effectively communicate critical analysis to decision-makers, policymakers, and other key stakeholders. 
 
-Slides are available [here]().
+Slides are available [here](http://bit.ly/dot_data_vis).
 
 ##Goals
 + Introduce the fundamentals of information visualization design
