@@ -20,9 +20,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-img[alt=img-full] {
-  width:100%;
-}
 img[alt=img-left-10]{
   width:10%;
   float:left;
@@ -163,6 +160,9 @@ img[alt=img-center-55]{
 }
 img[alt=img-center-60]{
   width:60%;
+}
+img[alt=img-center-65]{
+  width:65%;
 }
 img[alt=img-center-70]{
   width:70%;
