@@ -260,3 +260,31 @@ p.footer{
   bottom:0px;
   font-size: 0.4em;
 }
+
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}
+.orange {
+  color: orange;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
+.purple {
+  color: #800080;
+}
+.pink {
+  color: pink;
+}
+.brown {
+  color: brown;
+}
+.gray {
+  color: gray;
+}
