@@ -73,6 +73,10 @@ img[alt=img-right-20]{
   width:20%;
   float:right;
 }
+img[alt=img-right-25]{
+  width:25%;
+  float:right;
+}
 img[alt=img-right-30]{
   width:30%;
   float:right;
