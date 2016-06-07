@@ -1,6 +1,6 @@
 A class in more advanced topics of GIS using [QGIS](http://www.qgis.org/). 
 
-Slides are available [here](http://bit.ly/dot_intermediate_gis1/#1).
+Slides are available [here](http://www.datapolitan.com/DOT_GIS/20160610_Intermediate_GIS/#1).
 
 ##Goals
 <!--![img](images/goals_outcomes.jpg)-->

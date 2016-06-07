@@ -37,7 +37,7 @@ In order to build proficiency in the use of the open source GIS applications, Da
 ######[back to top](#top)
 
 <a id="intro-gis"></a>
-###Introduction to GIS Fundamentals
+###[Introduction to GIS Fundamentals](http://bit.ly/dot_intro_gis2)
 
 <a id="intro-sum"></a>
 ####Summary

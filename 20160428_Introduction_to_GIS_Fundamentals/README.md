@@ -1,10 +1,10 @@
 A class in basic fundamentals of GIS using [QGIS](http://www.qgis.org/). 
 
-Slides are available [here](http://www.datapolitan.com/DOT_GIS/20160413_Introduction_to_GIS_Fundamentals/#1).
+Slides are available [here](http://bit.ly/dot_intro_gis2).
 
 ##Outline for the Class
 
-![img](images/IMG_7776.jpg)
+<!-- ![img](images/IMG_7776.jpg) -->
 
 + Why map?
 + What is GIS?
