@@ -1033,6 +1033,121 @@ _Know how big 15 decimal degrees are?_
 
 ---
 
+#Buffering features in QGIS
+![img-center-70](images/buffer7.png)
+
+---
+
+#Step 2: Select injuries near bike lanes
+![img-center-70](images/buffer8.png)
+
+---
+
+#Select by location in QGIS
++ There's a plugin for that
+
+![img-left-55](images/spatialq1.png)
+![img-right-43](images/spatialq2.png)
+
+---
+
+#Select by location in QGIS
+![img-right-40](images/spatialq3.png)
++ Select the buffered injuries layer
++ Select `Intersects`
++ Select the bike routes layer
++ Select `Create new selection`
++ Click `Apply`
+
+---
+
+#Select by location in QGIS
+![img-right-70](images/spatialq4_box2.png)
++ Click `Close`
+
+---
+
+#What did we just do?
+--
+
+1. Created a 15ft buffer around bicyclist injuries
+--
+
+2. Selected injuries that intersected a bike lane<br>
+--
+
+(Meaning it happened on or near a bike lane)
+--
+
+
+#Still to do
+--
+
++ Find the injuries that happened off of bike lanes
+--
+
++ Count injuries off bike lane by Community Board
+--
+
++ Style the result
+
+---
+
+#Step 3: Find injuries off of bike lanes
+
+![img-center-100](images/invert1_box.png)
+
+---
+
+#Step 3: Find injuries off of bike lanes
+
+![img-center-100](images/invert2.png)
+
+---
+
+#Step 3: Find injuries off of bike lanes
+
+![img-center-70](images/invert3.png)
+
+---
+
+#Step 3: Find injuries off of bike lanes
+![img-right-50](images/invert4_box.png)
++ Create a layer of the selected features
+
+---
+
+#Step 4: Join result to Community Boards
+![img-right-50](images/join_cd_injury.png)
++ Join the Community Boards to the bicyclist injuries off of bicycle lanes
+
+---
+
+#Step 5: Style the result
+![img-center-90](images/nycd_bike_injuries_not_bike_route.png)
+
+---
+
+#By the way...
++ What percentage of bicyclist injuries happen on bike lanes?
+--
+
++ What does that number suggest to you?
+--
+
+
+##Maybe stay in bike lanes?
+![img-right-50](http://dailynexus.com/wp-content/uploads/2014/11/GIF-Bike-accident.gif)
+
+---
+
+#Your Turn
++ Filter the result for your borough
++ Style a map of just the community boards in your borough
++ Develop a hypothesis as to why the injuries are happening in those areas
+
+---
+
 #What we've covered
 --
 
@@ -1255,135 +1370,6 @@ class:center,middle
 
 ---
 
-class:center,middle
-#Let's get back to the exercise
-
----
-
-#Buffering features in QGIS
-![img-center-70](images/buffer7.png)
-
----
-
-#Step 2: Select injuries near bike lanes
-![img-center-70](images/buffer8.png)
-
----
-
-#Select by location in QGIS
-+ There's a plugin for that
-
-![img-left-55](images/spatialq1.png)
-![img-right-43](images/spatialq2.png)
-
----
-
-#Select by location in QGIS
-![img-right-40](images/spatialq3.png)
-+ Select the buffered injuries layer
-+ Select `Intersects`
-+ Select the bike routes layer
-+ Select `Create new selection`
-+ Click `Apply`
-
----
-
-#Select by location in QGIS
-![img-right-70](images/spatialq4_box2.png)
-+ Click `Close`
-
----
-
-#What did we just do?
---
-
-1. Created a 15ft buffer around bicyclist injuries
---
-
-2. Selected injuries that intersected a bike lane<br>
---
-
-(Meaning it happened on or near a bike lane)
---
-
-
-#Still to do
---
-
-+ Find the injuries that happened off of bike lanes
---
-
-+ Count injuries off bike lane by Community Board
---
-
-+ Style the result
-
----
-
-#Step 3: Find injuries off of bike lanes
-
-![img-center-100](images/invert1_box.png)
-
----
-
-#Step 3: Find injuries off of bike lanes
-
-![img-center-100](images/invert2.png)
-
----
-
-#Step 3: Find injuries off of bike lanes
-
-![img-center-70](images/invert3.png)
-
----
-
-#Step 3: Find injuries off of bike lanes
-![img-right-50](images/invert4_box.png)
-+ Create a layer of the selected features
-
----
-
-#Step 4: Join result to Community Boards
-![img-right-50](images/join_cd_injury.png)
-+ Join the Community Boards to the bicyclist injuries off of bicycle lanes
-
----
-
-#Step 5: Style the result
-![img-center-90](images/nycd_bike_injuries_not_bike_route.png)
-
----
-
-#By the way...
-+ What percentage of bicyclist injuries happen on bike lanes?
---
-
-+ What does that number suggest to you?
---
-
-
-##Maybe stay in bike lanes?
-![img-right-50](http://dailynexus.com/wp-content/uploads/2014/11/GIF-Bike-accident.gif)
-
----
-
-#Your Turn
-+ Filter the result for your borough
-+ Style a map of just the community boards in your borough
-+ Develop a hypothesis as to why the injuries are happening in those areas
-
----
-
-class:center,middle
-#5 Min Break
-![img-center-50](https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/12394103_911857328929406_745382446_n.jpg)
-
-###Source: https://www.instagram.com/p/_okHsID8xS/
-
-
----
-
 # Back to databases
 
 ![img-center-90](images/databases.jpg)
@@ -1573,6 +1559,14 @@ class:center,middle
 # Your turn
 + Use DB Manager and SQL to select the injuries for the Bronx
 + Add the results as a layer in QGIS
+
+---
+
+class:center,middle
+#5 Min Break
+![img-center-50](https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/12394103_911857328929406_745382446_n.jpg)
+
+###Source: https://www.instagram.com/p/_okHsID8xS/
 
 ---
 
