@@ -14,11 +14,6 @@
 	+ [Goals](#intermediate-goals)
 	+ [Terminal Learning Objectives](#intermediate-tlo)
 	+ [Key Audience](#intermediate-aud)
-+ [Data Visualization](#data-vis)
-	+ [Summary](#data-vis-sum)
-	+ [Goals](#data-vis-goals)
-	+ [Terminal Learning Objectives](#data-vis-tlo)
-	+ [Key Audience](#data-vis-aud)
 + [Course Structure and Content](#course-struct)
 + [Scope of Services](#scope-services)
 
@@ -65,7 +60,7 @@ A full-day course for up to 25 employees in basic spatial concepts and key featu
 - - - 
 
 <a id="intermediate-qgis"></a>
-###Intermediate GIS: Spatial Analysis with QGIS and PostGIS
+###[Intermediate GIS: Spatial Analysis with QGIS and PostGIS](http://bit.ly/dot_intermediate_gis2)
 
 <a id="intermediate-sum"></a>
 ####Summary
@@ -92,42 +87,11 @@ A full-day course for up to 20 employees familiar with how to load and visualize
 
 ######[back to top](#top)
 
-- - -
-
-<a id="data-vis"></a>
-###Data Visualization
-
-<a id="data-vis-sum"></a>
-####Summary
-A half-day course for up to 20 employees covering the key concepts of how to create truthful and visually-compelling visualizations of important data. The course will cover how to create impactful charts, graphs, and other information visualizations in order to effectively communicate critical analysis to decision-makers, policymakers, and other key stakeholders.
-
-<a id="data-vis-goals"></a>
-###Goals
-+ Introduce the fundamentals of information visualization design
-+ Introduce key terminology as it relates to information visualization design
-+ Discuss the application of design principles to the visualization of DOT data
-+ Discuss best practices of information visualization design as they relate to the work of DOT
-+ Practice creating impactful charts, graphs, and other visualizations to communicate information 
-
-<a id="data-vis-tlo"></a>
-###Terminal Learning Objectives
-+ Participants will understand the basics of information visualization design
-+ Participants will be familiar with key terminology and concepts of information visualization design as they relate to DOT data 
-+ Participants will understand how to create meaningful and visually-compelling charts in Excel using DOT data
-+ Participants will be practiced in applying the principles of good information visualization design to their work
-
-<a id="data-vis-aud"></a>
-###Key Audience
-+ Employees of all levels who communicate critical analysis through charts, graphs, or other means of information visualization
-+ Employees needing to increase their ability to interpret and understand charts, graphs, and other means of information visualization as part of their work
-
-######[back to top](#top)
-
 - - - 
 
 <a id="course-struct"></a>
 ##Course Structure and Content
-Each course will be designed as a collaborative, hands-on, dynamic experience for participants. The Introduction to GIS Fundamentals and Intermediate GIS classes will be one (1) day classes, running from 9 am to 4 pm, with a one (1) hour lunch break. The Data Visualization will be a half-day class, running from 9 am to 1 pm with no lunch break. While the course content will closely follow the outlines above, the actual content for each course will be the responsibility of the course designer and instructor. Any deviations from the above course content will be consistent with creating the relevant and engaging educational environment DOT is seeking for its employees. The DOT Learning Center will be provided draft copies of the materials in advance for their review and input.
+Each course will be designed as a collaborative, hands-on, dynamic experience for participants. The Introduction to GIS Fundamentals and Intermediate GIS classes will be one (1) day classes, running from 9 am to 4 pm, with a one (1) hour lunch break. While the course content will closely follow the outlines above, the actual content for each course will be the responsibility of the course designer and instructor. Any deviations from the above course content will be consistent with creating the relevant and engaging educational environment DOT is seeking for its employees. The DOT Learning Center will be provided draft copies of the materials in advance for their review and input.
 
 ######[back to top](#top)
 
