@@ -2,7 +2,7 @@ A class in more advanced topics of GIS using [QGIS](http://www.qgis.org/).
 
 Slides are available [here](http://www.datapolitan.com/DOT_GIS/20160610_Intermediate_GIS/#1).
 
-##Goals
+## Goals
 <!--![img](images/goals_outcomes.jpg)-->
 + Review basic geospatial and cartographic concepts
 + Further develop the ability of students to think spatially
@@ -10,14 +10,14 @@ Slides are available [here](http://www.datapolitan.com/DOT_GIS/20160610_Intermed
 + Understand the structure and use of relational databases for spatial analysis
 + Introduce best practices in acquiring, cleaning, and visualizing spatial data
 
-##Outcomes
+## Outcomes
 + Participants will understand the fundamentals of creating more accurate and visually compelling maps
 + Participants will better understand the spatial data processing, analysis, and visualization workflow in QGIS
 + Participants will be able to connect to a spatial database (PostGIS) using QGIS
 + Participants will be practiced in composing SQL statements to perform basic geoprocessing tasks
 
 
-##Outline for the Class
+## Outline for the Class
 
 + Introductions
 + Review of basic concepts

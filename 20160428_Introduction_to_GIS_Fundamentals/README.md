@@ -2,7 +2,7 @@ A class in basic fundamentals of GIS using [QGIS](http://www.qgis.org/).
 
 Slides are available [here](http://bit.ly/dot_intro_gis2).
 
-##Outline for the Class
+## Outline for the Class
 
 <!-- ![img](images/IMG_7776.jpg) -->
 
