@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Intermediate GIS with QGIS and PostGIS - NYC DOT</title>
+    <title>Intermediate GIS with QGIS and PostGIS</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="slide.css"/>
   </head>
@@ -11,7 +11,7 @@
 layout:true
 
 <p class="footer">
-<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Intermediate GIS with QGIS and PostGIS</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks, Eric Brelsford, and Beth Pappas</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Intermediate GIS with QGIS and PostGIS</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.datapolitan.com" property="cc:attributionName" rel="cc:attributionURL">Richard Dunks, Eric Brelsford, and Beth Pappas</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative-Commons-License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
 </p>
 ---
 
@@ -19,15 +19,15 @@ class: center,middle
 
 ![img-center-50](images/nycdot_logo.png)
 - - -
-#Intermediate GIS with QGIS and PostGIS
-##Richard Dunks, Co-Instructor
-##Eric Brelsford, Co-Instructor
-##Clayton Hunter, TA
-###Follow along: http://bit.ly/dot_intermediate_gis2
+# Intermediate GIS with QGIS and PostGIS
+## Richard Dunks, Co-Instructor
+## Eric Brelsford, Co-Instructor
+## Clayton Hunter, TA
+### Follow along: http://bit.ly/intermediate-gis
 
 ---
 
-#Introductions
+# Introductions
 + Name
 + Department / Job
 + One thing you hope to get out of class today
@@ -35,7 +35,7 @@ class: center,middle
 
 ---
 
-#Goals for the class 
+# Goals for the class 
 --
 
 + Provide a review of key spatial concepts and GIS functions in QGIS
@@ -54,7 +54,7 @@ class: center,middle
 
 ---
 
-#Outcomes
+# Outcomes
 
 --
 
@@ -74,7 +74,7 @@ class: center,middle
 
 ---
 
-#Assumptions
+# Assumptions
 --
 
 + You know something about working with spatial data, maps, and a GIS of some kind
@@ -93,10 +93,10 @@ class: center,middle
 
 ---
 
-#Housekeeping
+# Housekeeping
 --
 
-+ We're not explicitly going over some basic operations in the interest of time (pan, zoom, inspect, select, etc.) but cover those in our [intro class](http://www.datapolitan.com/DOT_GIS/20160428_Introduction_to_GIS_Fundamentals/#1) and will be happy to demo if you have questions
++ We're not explicitly going over some basic operations in the interest of time (pan, zoom, inspect, select, etc.) but cover those in our [intro class](http://www.datapolitan.com/DOT_GIS/20160428_Introduction_to_GIS_Fundamentals/# 1) and will be happy to demo if you have questions
 --
 
 + The workbooks are for your notes and to take with you
@@ -112,7 +112,7 @@ class: center,middle
 
 ---
 
-#Goals for this morning
+# Goals for this morning
 
 --
 
@@ -140,41 +140,41 @@ class: center,middle
 ---
 
 class:center,middle
-#Basic Spatial Elements
+# Basic Spatial Elements
 
 ---
 
-#Points  
+# Points  
 ![img-center-50](images/point_feature.png)
-####Source: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview
+#### Source: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview
 
 ---
 
-#Lines
+# Lines
 ![img-center-50](images/polyline_feature.png)
-####Source: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview
+#### Source: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview
 
 ---
 
-#Polygons
+# Polygons
 ![img-center-50](images/polygon_feature.png)
-####Source: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview
+#### Source: http://docs.qgis.org/2.8/en/docs/gentle_gis_introduction/vector_data.html#overview
 
 ---
 
 class:center,middle
-#How do we make maps?
+# How do we make maps?
 
 ---
 
-#Geographic Information System (GIS)
+# Geographic Information System (GIS)
 > Any system for capturing, storing, checking, and displaying data related to positions on the Earth's surface
 
 + [National Geographic Education Encyclopedia](http://education.nationalgeographic.org/encyclopedia/geographic-information-system-gis/)
 
 ---
 
-#Or more simply
+# Or more simply
 
 > In a GIS, you connect _**data**_ with _**geography**_.
 
@@ -182,7 +182,7 @@ class:center,middle
 
 ---
 
-#Geographic Information Systems (GIS)
+# Geographic Information Systems (GIS)
 --
 
 + Create interactive queries (user-created searches)
@@ -199,13 +199,13 @@ class:center,middle
 ---
 
 class:center,middle
-#Let's Get Started
+# Let's Get Started
 
 ![img-center-20](images/qgis_launch.png)
 
 ---
 
-#A quick note on exercises
+# A quick note on exercises
 --
 
 + We're going to be working with real-world data
@@ -231,11 +231,11 @@ class:center,middle
 ---
 
 class:center,middle
-#Let's make a map
+# Let's make a map
 ![img-center-80](images/p1_finished.png)
 ---
 
-#Base Maps 
+# Base Maps 
 --
 
 + Adding base maps will give your map context
@@ -248,14 +248,14 @@ class:center,middle
 
 ---
 
-#Base Map Plugin
+# Base Map Plugin
 + From the Plugins menu, select "Manage and Install Plugins"
 
 ![img-center-60](images/basemap2.png)
 
 ---
 
-#Base Map Plugin
+# Base Map Plugin
 
 + Search for the QuickMapServices plugin and install it
 
@@ -263,36 +263,36 @@ class:center,middle
 
 ---
 
-#Setting Up QuickMapServices Plugin
+# Setting Up QuickMapServices Plugin
 + Go to the Settings Menu
 ![img-center-80](images/basemap4.png)
 
 ---
 
-#Setting Up QuickMapServices Plugin
+# Setting Up QuickMapServices Plugin
 + Get the contributed packs
 ![img-center-80](images/basemap5_box.png)
 
 ---
 
-#Setting Up QuickMapServices Plugin
+# Setting Up QuickMapServices Plugin
 ![img-right-45](images/basemap6_trim.png)
 + Revel in all the beautiful base maps
 
 ---
 
-#Select a base map from the list
+# Select a base map from the list
 ![img-center-80](images/p1_basemap.png)
 
 ---
 
-#Adding Layers
+# Adding Layers
 ![img-center-100](images/map1.png)
-####Image Source: http://www.geocontrolling.com/co-je-gis.htm
+#### Image Source: http://www.geocontrolling.com/co-je-gis.htm
 
 ---
 
-#Shapefiles
+# Shapefiles
 --
         
 + Basic file for storing map elements
@@ -309,7 +309,7 @@ class:center,middle
 
 ---
 
-#Download a shapefile and import
+# Download a shapefile and import
 1. [Click this link](data/boros/boros.zip) and download the file to your desktop
 2. Unzip the file
 
@@ -317,7 +317,7 @@ class:center,middle
 ![img-center-80](images/qgis_nav2.png)
 ---
 
-#Import a shapefile
+# Import a shapefile
 
 ![img-center-50](images/qgis_nav3_box.png)
 
@@ -325,49 +325,49 @@ class:center,middle
 
 ---
 
-#Import a shapefile
+# Import a shapefile
 ![img-center-80](images/p1_boro_shp.png)
 
 ---
 
 class:center,middle
-#Adding a CSV file
+# Adding a CSV file
 
 ---
 
-#What is a CSV?
+# What is a CSV?
 --
 
 ![img-center-100](images/csv_311_ex.png)
 
 ---
 
-#Import a CSV
+# Import a CSV
 + [Right click this link](data/dot_311_20160201_20160207.csv)
 + Select "Save link as" 
 + Save the file (`dot_311_20160201_20160207.csv`) to your desktop
 
 ---
 
-#Adding CSV Data
+# Adding CSV Data
 ![img-center-70](images/add_csv1.png)
 
 ![img-center-90](images/add_csv2_box_crop.png)
 
 ---
 
-#Adding CSV Data
+# Adding CSV Data
 ![img](images/p1_csv_box.png)
 
 ---
 
-#Adding CSV Data
+# Adding CSV Data
 ![img](images/add_csv5.png)
 
 ---
 
 class:center,middle
-#What is a Coordinate Reference System?
+# What is a Coordinate Reference System?
 
 ---
 
@@ -390,7 +390,7 @@ class:center,middle
 
 ---
 
-#Projections
+# Projections
 + Every projection distorts some part of your map
 
 ![img-center-50](images/projections-faces.png)
@@ -399,7 +399,7 @@ class:center,middle
 
 ---
 
-#Projections
+# Projections
 
 + For the most part we will work in **WGS 84** (latitude and longitude)
 --
@@ -407,7 +407,7 @@ class:center,middle
 + In NYC, we use a more accurate projection **NY State Plane/Long Island Zone**
 ![img-right-60](images/projections_NYSplane.png)
 
-######Source: https://alidade.wikispaces.com/New+York+SPCS+Zones
+###### Source: https://alidade.wikispaces.com/New+York+SPCS+Zones
 ---
 
 # Projections
@@ -424,29 +424,29 @@ class:center,middle
 
 ---
 
-#Adding CSV Data
+# Adding CSV Data
 ![img-center-55](images/add_csv6_box.png)
 
 ---
 
-#Adding CSV Data
+# Adding CSV Data
 ![img-center-80](images/p1_points_poly.png)
 
 ---
 
 class:center,middle
-#Styling the map
+# Styling the map
 
 ---
 
-#Attribute Table (Right click on layer)
+# Attribute Table (Right click on layer)
 ![img-left-40](images/qgis_nav6_crop.png)
 ![img-right-55](images/qgis_nav7.png)
 
 ---
 
 <!-- Styling -->
-#Styling Features
+# Styling Features
 + Right-click the layer and select the Properties option
 + Select "Style," and finally, choose "Categorized":
         
@@ -454,7 +454,7 @@ class:center,middle
 
 ---
 
-#Styling Features
+# Styling Features
 + Select the column that has the data you want to style:
     
 ![img-center-60](images/styling2.png)
@@ -463,17 +463,17 @@ class:center,middle
 
 ---
 
-#Styling Features
+# Styling Features
 ![img](images/styling4_box.png)
 
 ---
 
-#Styling Features
+# Styling Features
 ![img-center-80](images/p1_style.png)
 
 ---
 
-#Your turn
+# Your turn
 + Style the points and polygons however you'd like
 + Try adding labels to the data
 + Get familiar with the interface
@@ -481,49 +481,49 @@ class:center,middle
 ---
 
 class:middle,center
-#5 Min Break
+# 5 Min Break
 ![img-center-50](https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s480x480/e35/12277599_1650021651913770_1349530766_n.jpg)
 
-###Source: https://www.instagram.com/p/-0QkhTj82O/
+### Source: https://www.instagram.com/p/-0QkhTj82O/
 ---
 
 class:center,middle
-#Spatial Databases
+# Spatial Databases
 
 ---
 
 class:center,middle
-#Who's used one before?
+# Who's used one before?
 
 ---
 
-#What is a database?
+# What is a database?
 
 --
 
 > An organized collection of data.
 
-##[Wikipedia](https://en.wikipedia.org/wiki/Database)
+## [Wikipedia](https://en.wikipedia.org/wiki/Database)
 ---
 
-#What is a database?
+# What is a database?
 
 > A set of data that has a regular structure and that is organized in such a way that a computer can easily find the desired information.
 
-##[The Linux Information Project](http://www.linfo.org/database.html)
+## [The Linux Information Project](http://www.linfo.org/database.html)
 
 ---
 
-#What is a database?
+# What is a database?
 
 --
 
 ![img-center-90](images/databases.jpg)
-#####Source: http://blog.hackerrank.com/new-domain-tuesday-hackerrank-reveals-data-structure-database-sql-challenges/
+##### Source: http://blog.hackerrank.com/new-domain-tuesday-hackerrank-reveals-data-structure-database-sql-challenges/
 
 ---
 
-#What is a database?
+# What is a database?
 + Another source of data
 --
 
@@ -534,7 +534,7 @@ class:center,middle
 
 ---
 
-#What is a spatial database?
+# What is a spatial database?
 --
 
 + A database that stores spatial features
@@ -548,11 +548,11 @@ class:center,middle
 
 ![img](http://presentations.opengeo.org/2011_IMAK/Workshop_OpenSource_Stack/_images/spatialmojo.png)
 
-####Source: http://presentations.opengeo.org/2011_IMAK/Workshop_OpenSource_Stack/postgis/spatialdbs.html
+#### Source: http://presentations.opengeo.org/2011_IMAK/Workshop_OpenSource_Stack/postgis/spatialdbs.html
 
 ---
 
-#Let's connect to a spatial database
+# Let's connect to a spatial database
 ![img-center-70](images/add_pg_layer1.png)
 
 --
@@ -561,7 +561,7 @@ class:center,middle
 
 ---
 
-#Let's connect to a spatial database
+# Let's connect to a spatial database
 ![img-right-40](images/add_pg_layer3_box.png)
 + Name: (Whatever you'd like)
 + Host: `training.c1erymiua9dx.us-east-1.rds.amazonaws.com`
@@ -575,43 +575,43 @@ class:center,middle
 
 ---
 
-#Let's connect to a spatial database
+# Let's connect to a spatial database
 ![img-left-45](images/add_pg_layer5_box.png)
 ![img-right-45](images/add_pg_layer6_box.png)
-####&nbsp;
-####&nbsp;
-####&nbsp;
-####&nbsp;
-####&nbsp;
-####&nbsp;
-####&nbsp;
-###Now it's just like any other data source we've been using
+#### &nbsp;
+#### &nbsp;
+#### &nbsp;
+#### &nbsp;
+#### &nbsp;
+#### &nbsp;
+#### &nbsp;
+### Now it's just like any other data source we've been using
 
 ---
 
-#Exercise 1 - Selecting Injuries in a Borough
+# Exercise 1 - Selecting Injuries in a Borough
 1. Add the `injuries` table to your map
 2. Right click and select "Filter..."
 ![img-right-40](images/filter_pg_layer1.png)
 3. Select `borough` and query for your borough
 
-#####&nbsp;
+##### &nbsp;
 ![img-left-60](images/filter_pg_layer2_crop.png)
 
 ---
 
-#Selecting Injuries in a Borough
+# Selecting Injuries in a Borough
 ![img-center-60](images/filter_pg_layer3.png)
 
 ---
 
-#Save Selection As Shapefile
+# Save Selection As Shapefile
 ![img-left-40](images/save_filter1.png)
 ![img-right-55](images/save_filter2.png)
 
 ---
 
-#Let's talk datatypes
+# Let's talk datatypes
 
 --
 
@@ -623,27 +623,27 @@ class:center,middle
 
 ---
 
-#Let's talk datatypes
+# Let's talk datatypes
 
 ![img-center-80](images/qgis_attribute_table_number.png)
 
 --
 
-##Numbers will be right aligned
+## Numbers will be right aligned
 
 ---
 
-#Let's talk datatypes
+# Let's talk datatypes
 
 ![img-center-80](images/qgis_attribute_table_string.png)
 
 --
 
-##Text will be left aligned
+## Text will be left aligned
 
 ---
 
-#Database datatypes
+# Database datatypes
 
 --
 
@@ -660,7 +660,7 @@ class:center,middle
 
 ---
 
-#Why use a spatial database?
+# Why use a spatial database?
 
 --
 
@@ -674,7 +674,7 @@ class:center,middle
 
 ---
 
-#Drawbacks of using a spatial database
+# Drawbacks of using a spatial database
 
 --
 
@@ -692,14 +692,14 @@ class:center,middle
 ---
 
 class:center,middle
-#10 Min Break
+# 10 Min Break
 ![img-center-50](https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/12479567_465385250325330_1226866813_n.jpg)
 
-###Source: https://www.instagram.com/p/BAVc4Gzj88v/
+### Source: https://www.instagram.com/p/BAVc4Gzj88v/
 
 ---
 
-##Exercise 2 - Let's do some data analysis
+## Exercise 2 - Let's do some data analysis
 --
 
 + Which Community Boards in NYC have the highest number of bicyclist injuries?
@@ -709,29 +709,29 @@ class:center,middle
 
 ---
 
-#First of all
+# First of all
 + What kind of map is this?
 
 ![img-center-60](images/nycd_injuries_choropleth.png)
 
 ---
 
-#Choropleth
+# Choropleth
 ![img-center-75](images/choropleth.png)
 
-#####Source: http://www.geogalot.com/myp-humanities/year-9/understanding-hazards/003---choropleth-mapping
+##### Source: http://www.geogalot.com/myp-humanities/year-9/understanding-hazards/003---choropleth-mapping
 
 ---
 
-#Choropleth
+# Choropleth
 
 ![img-center-100](images/floatingsheep-beer-church.jpg)
 
-#####Source: http://www.floatingsheep.org/2012/07/church-or-beer-americans-on-twitter.html
+##### Source: http://www.floatingsheep.org/2012/07/church-or-beer-americans-on-twitter.html
 
 ---
 
-#Thematic Maps
+# Thematic Maps
 
 --
 
@@ -745,7 +745,7 @@ class:center,middle
 
 ---
 
-#General Reference Maps
+# General Reference Maps
 
 --
 
@@ -767,16 +767,16 @@ class:center,middle
 
 class:center,middle
 ![img-center-90](images/referencemap.png)
-#####Source: http://nationalmap.gov/small_scale/printable/reference.html
+##### Source: http://nationalmap.gov/small_scale/printable/reference.html
 
 ---
 
 class:center,middle
-#Let's make a choropleth
+# Let's make a choropleth
 
 ---
 
-#Load data
+# Load data
 + Add the `nyc_cd_4326` table
 + Add the `injuries` table
 
@@ -784,41 +784,41 @@ class:center,middle
 
 ---
 
-#Spatial Join
+# Spatial Join
 
 ![img-right-30](images/join1.png)
 
 --
 
-##Point to Polygon
+## Point to Polygon
 + Relate points inside a polygon to that polygon (ex. count the number of points)
 
 --
 
-##Polygon to Point 
+## Polygon to Point 
 + Points can take on value of enclosing polygon
 
 ---
 
-#Spatial Join
+# Spatial Join
 + We'll be joining injuries (points) to community districts (polygons)
 
 ![img-center-50](images/sjoin2.png)
 
 ---
 
-#Spatial Join
+# Spatial Join
 ![img-left-50](images/sjoin3.png)
 ![img-right-45](images/sjoin4_box.png)
 
 ---
 
-#Style the Result
+# Style the Result
 ![img-center-70](images/nycd_injuries_choropleth.png)
 
 ---
 
-#Style the Result
+# Style the Result
 ![img-center-100](images/sjoin9.png)
 
 ---
@@ -850,14 +850,14 @@ class:center,middle
 
 ---
 
-#Add New Map tool will add your current map
+# Add New Map tool will add your current map
 ![img-left-20](images/print_comp5_box.png)
 --
 ![img-right-70](images/print_comp6.png)
 
 ---
 
-#Customize item properties on the right
+# Customize item properties on the right
 
 ![img-center-50](images/print_comp7.png)
 
@@ -876,7 +876,7 @@ class:center,middle
 
 ---
 
-#Review
+# Review
 --
 
 + What did we just do?
@@ -887,22 +887,22 @@ class:center,middle
 ---
 
 class:center,middle
-#Now let's ask something a little more complicated
+# Now let's ask something a little more complicated
 
 ---
 
-#Exercise 3 - Bicyclist Injuries
+# Exercise 3 - Bicyclist Injuries
 + Which community board has the highest number of bicyclist injuries off of bicycle paths?
 
 ![img-right-45](images/buffer0.png)
 --
 
-#How do we answer this?
+# How do we answer this?
 <!-- ![img-center-40](images/nycd_bike_injuries_not_bike_route.png) -->
 
 ---
 
-#Steps to answer
+# Steps to answer
 --
 
 1. Buffer bicyclist injuries (points)
@@ -921,12 +921,12 @@ class:center,middle
 
 ---
 
-#What we're going to create
+# What we're going to create
 ![img-center-90](images/nycd_bike_injuries_not_bike_route.png)
 
 ---
 
-#Step 0: Load the tables we need
+# Step 0: Load the tables we need
 ![img-right-55](images/buffer1a.png)
 + `injuries`
 + `bike_routes_2015`
@@ -934,20 +934,20 @@ class:center,middle
 
 ---
 
-#Step 1: Buffer bicyclist injuries
+# Step 1: Buffer bicyclist injuries
 
 ![img-center-70](images/buffer1.png)
 
 ---
 
-#Step 1: Buffer bicyclist injuries
+# Step 1: Buffer bicyclist injuries
 + Create a 15ft around injury locations
 
 ![img-center-60](images/buffer2.png)
 
 ---
 
-#Buffering features
+# Buffering features
 --
 
 + Gives "size" to 2-D features
@@ -963,18 +963,18 @@ class:center,middle
 
 ---
 
-#Buffering features in QGIS
+# Buffering features in QGIS
 ![img-left-50](images/buffer3.png)
 ![img-right-48](images/buffer4_box.png)
 
 ---
 
-#Oops
+# Oops
 ![img-center-70](images/buffer5.png)
 
 ---
 
-#Map Units
+# Map Units
 --
 
 + Each projection has a base unit of distance
@@ -991,7 +991,7 @@ _Know how big 15 decimal degrees are?_
 + For NYC, EPSG:2263 is best (the map units are in feet)
 ---
 
-#Reprojecting Layers
+# Reprojecting Layers
 --
 
 +  We want to project the `injuries` layer to EPSG:2263
@@ -1001,7 +1001,7 @@ _Know how big 15 decimal degrees are?_
 + Right click the layer and select `Save As...`
 ---
 
-#Reprojecting Layers
+# Reprojecting Layers
 + We want to project the `injuries` layer to EPSG:2263
 + Right click the layer and select `Save As...`
 ![img-right-45](images/reproject2_box.png)
@@ -1015,11 +1015,11 @@ _Know how big 15 decimal degrees are?_
 
 --
 
-###Notice we're saving data from the database locally on our computer when we reproject
+### Notice we're saving data from the database locally on our computer when we reproject
 
 ---
 
-#Buffering features in QGIS
+# Buffering features in QGIS
 ![img-right-45](images/buffer6.png)
 + Make sure you select your reprojected layer
 + Set the distance to 15 (this time it'll be feet)
@@ -1028,22 +1028,22 @@ _Know how big 15 decimal degrees are?_
 
 ---
 
-#Buffering features in QGIS
+# Buffering features in QGIS
 ![img-center-70](images/buffer7.png)
 
 ---
 
-#Buffering features in QGIS
+# Buffering features in QGIS
 ![img-center-70](images/buffer7.png)
 
 ---
 
-#Step 2: Select injuries near bike lanes
+# Step 2: Select injuries near bike lanes
 ![img-center-70](images/buffer8.png)
 
 ---
 
-#Select by location in QGIS
+# Select by location in QGIS
 + There's a plugin for that
 
 ![img-left-55](images/spatialq1.png)
@@ -1051,7 +1051,7 @@ _Know how big 15 decimal degrees are?_
 
 ---
 
-#Select by location in QGIS
+# Select by location in QGIS
 ![img-right-40](images/spatialq3.png)
 + Select the buffered injuries layer
 + Select `Intersects`
@@ -1061,13 +1061,13 @@ _Know how big 15 decimal degrees are?_
 
 ---
 
-#Select by location in QGIS
+# Select by location in QGIS
 ![img-right-70](images/spatialq4_box2.png)
 + Click `Close`
 
 ---
 
-#What did we just do?
+# What did we just do?
 --
 
 1. Created a 15ft buffer around bicyclist injuries
@@ -1080,7 +1080,7 @@ _Know how big 15 decimal degrees are?_
 --
 
 
-#Still to do
+# Still to do
 --
 
 + Find the injuries that happened off of bike lanes
@@ -1093,42 +1093,42 @@ _Know how big 15 decimal degrees are?_
 
 ---
 
-#Step 3: Find injuries off of bike lanes
+# Step 3: Find injuries off of bike lanes
 
 ![img-center-100](images/invert1_box.png)
 
 ---
 
-#Step 3: Find injuries off of bike lanes
+# Step 3: Find injuries off of bike lanes
 
 ![img-center-100](images/invert2.png)
 
 ---
 
-#Step 3: Find injuries off of bike lanes
+# Step 3: Find injuries off of bike lanes
 
 ![img-center-70](images/invert3.png)
 
 ---
 
-#Step 3: Find injuries off of bike lanes
+# Step 3: Find injuries off of bike lanes
 ![img-right-50](images/invert4_box.png)
 + Create a layer of the selected features
 
 ---
 
-#Step 4: Join result to Community Boards
+# Step 4: Join result to Community Boards
 ![img-right-50](images/join_cd_injury.png)
 + Join the Community Boards to the bicyclist injuries off of bicycle lanes
 
 ---
 
-#Step 5: Style the result
+# Step 5: Style the result
 ![img-center-90](images/nycd_bike_injuries_not_bike_route.png)
 
 ---
 
-#By the way...
+# By the way...
 + What percentage of bicyclist injuries happen on bike lanes?
 --
 
@@ -1136,19 +1136,19 @@ _Know how big 15 decimal degrees are?_
 --
 
 
-##Maybe stay in bike lanes?
+## Maybe stay in bike lanes?
 ![img-right-50](http://dailynexus.com/wp-content/uploads/2014/11/GIF-Bike-accident.gif)
 
 ---
 
-#Your Turn
+# Your Turn
 + Filter the result for your borough
 + Style a map of just the community boards in your borough
 + Develop a hypothesis as to why the injuries are happening in those areas
 
 ---
 
-#What we've covered
+# What we've covered
 --
 
 + Reviewed basic mapping concepts
@@ -1177,32 +1177,32 @@ _Know how big 15 decimal degrees are?_
 ---
 
 class:center,middle
-#Lunch
+# Lunch
 
 ![img-center-50](https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/12725068_842510565872382_389593737_n.jpg)
 
-###Source: https://www.instagram.com/p/BB7cKt_D8zv/
+### Source: https://www.instagram.com/p/BB7cKt_D8zv/
 
 ---
 
 class:center,middle
-#Welcome Back
+# Welcome Back
 
 <iframe width="700" height="450" src="https://www.youtube.com/embed/KUF_Ckv8HbE" frameborder="0" allowfullscreen></iframe>
 
 ---
 
 class: center,middle
-#What's one thing you learned this morning that you found useful, interesting, and/or helpful?
+# What's one thing you learned this morning that you found useful, interesting, and/or helpful?
 
 ---
 
 class:center,middle
-#What do you think of QGIS so far?
+# What do you think of QGIS so far?
 
 ---
 
-#Some Other GIS Tools
+# Some Other GIS Tools
 
 ![img-center-100](images/gis.png)
 
@@ -1231,16 +1231,16 @@ Source: http://www.avenza.com/resources/blog/2011/06/28/how-get-open-street-map-
 
 #[Google Fusion Tables](https://sites.google.com/site/fusiontablestalks/stories)
 <iframe width="100%" height="430" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col54%2C+col55+from+1dNtdy7FuBBZ2qTxX7jgZ5Dig8n96oxRrWFjuhYpJ+where+col3+%3E%3D+0+and+col3+%3C%3D+4+and+col26+%3D+2+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=40.844685&amp;lng=-73.915349&amp;t=1&amp;z=12&amp;l=col54&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=26&amp;hmw=0&amp;hml=TWO_COL_LAT_LNG"></iframe>
-Source: [NYC Open Data 311 Noise Complaints, 1 Jan - 20 May 2014, Between Midnight and 4 am in the Bronx](https://www.google.com/fusiontables/DataSource?docid=1dNtdy7FuBBZ2qTxX7jgZ5Dig8n96oxRrWFjuhYpJ#map:id=3)
+Source: [NYC Open Data 311 Noise Complaints, 1 Jan - 20 May 2014, Between Midnight and 4 am in the Bronx](https://www.google.com/fusiontables/DataSource?docid=1dNtdy7FuBBZ2qTxX7jgZ5Dig8n96oxRrWFjuhYpJ# map:id=3)
 
 ---
 
 class:center,middle
-#Proprietary vs Open-Source
+# Proprietary vs Open-Source
 
 ---
 
-#What is open-source?
+# What is open-source?
 
 ![img-center-80](https://www.apertus.org/sites/default/files/bart_os.gif)
 
@@ -1248,7 +1248,7 @@ Source: https://www.apertus.org/opensource <a rel="license" href="http://creativ
 
 ---
 
-#What is open-source?
+# What is open-source?
 --
 
 + Free to download
@@ -1271,7 +1271,7 @@ Source: https://www.apertus.org/opensource <a rel="license" href="http://creativ
 
 ---
 
-#Proprietary software
+# Proprietary software
 --
 
 + Pay to download
@@ -1288,12 +1288,12 @@ Source: https://www.apertus.org/opensource <a rel="license" href="http://creativ
 ---
 
 class:center,middle
-#How does this affect you?
+# How does this affect you?
 
 ---
 
 class:center,middle
-#Another example of open-source mapping software
+# Another example of open-source mapping software
 
 ---
 
@@ -1302,11 +1302,11 @@ class:center,middle
 ---
 
 class:center,middle
-#Some things about QGIS...
+# Some things about QGIS...
 
 ---
 
-#QGIS - The Good
+# QGIS - The Good
 --
 
 + Open-source software that’s freely available
@@ -1321,7 +1321,7 @@ class:center,middle
 + Strong community developing features and plug-ins
 ---
 
-#QGIS - The Bad
+# QGIS - The Bad
 --
 
 + Not an enterprise software like ESRI ArcGIS
@@ -1343,12 +1343,12 @@ class:center,middle
 
 ---
 
-#And of course...
+# And of course...
 ![img-ful](images/bug.png)
 
 ---
 
-#QGIS - The Bug-y
+# QGIS - The Bug-y
 --
 
 + Projects with different CRS layers tend to get misaligned when zooming
@@ -1380,7 +1380,7 @@ class:center,middle
 
 ---
 
-#You might ask:
+# You might ask:
 
 ![img-right-30](images/paper-stack.jpg)
 
@@ -1394,7 +1394,7 @@ class:center,middle
 
 ---
 
-#Databases are great at questions like these
+# Databases are great at questions like these
 --
 
 + It's what they were made for
@@ -1404,7 +1404,7 @@ class:center,middle
 
 ---
 
-#SQL
+# SQL
 --
 
 + Structured Query Language
@@ -1413,7 +1413,7 @@ class:center,middle
 + The language databases understand
 ---
 
-#SQL queries
+# SQL queries
 --
 
 + Can *view* data
@@ -1422,11 +1422,11 @@ class:center,middle
 + and *change* data
 --
 
-##We're going to stick to *viewing* data
+## We're going to stick to *viewing* data
 
 ---
 
-#SQL looks like:
+# SQL looks like:
 
 ```sql
 SELECT *
@@ -1449,7 +1449,7 @@ WHERE BOROUGH = 'QUEENS'
 
 ---
 
-#You can combine conditions
+# You can combine conditions
 
 ```sql
 SELECT *
@@ -1467,7 +1467,7 @@ WHERE contributi = 'Outside Car Distraction' OR contributi = 'Fatigued/Drowsy'
 
 ---
 
-#This should feel pretty familiar
+# This should feel pretty familiar
 --
 
 ![img-center-60](images/filter1.png)
@@ -1475,7 +1475,7 @@ WHERE contributi = 'Outside Car Distraction' OR contributi = 'Fatigued/Drowsy'
 ---
 
 class:center,middle
-#Let's use SQL in QGIS
+# Let's use SQL in QGIS
 
 ---
 
@@ -1563,14 +1563,14 @@ class:center,middle
 ---
 
 class:center,middle
-#5 Min Break
+# 5 Min Break
 ![img-center-50](https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/12394103_911857328929406_745382446_n.jpg)
 
-###Source: https://www.instagram.com/p/_okHsID8xS/
+### Source: https://www.instagram.com/p/_okHsID8xS/
 
 ---
 
-#Spatial joins in SQL
+# Spatial joins in SQL
 --
 
 + You can do the same spatial joins you have done in QGIS using SQL
@@ -1583,7 +1583,7 @@ class:center,middle
 
 ---
 
-#Spatial joins in SQL
+# Spatial joins in SQL
 --
 
 + Let's start with a points in polygon join:
@@ -1599,7 +1599,7 @@ GROUP BY nyc_boro.gid
 
 ---
 
-#Line by line:
+# Line by line:
 
 ```sql
 SELECT nyc_boro.*, COUNT(injuries)
@@ -1609,7 +1609,7 @@ SELECT nyc_boro.*, COUNT(injuries)
 
 ---
 
-#Line by line:
+# Line by line:
 
 ```sql
 FROM nyc_boro
@@ -1619,7 +1619,7 @@ FROM nyc_boro
 
 ---
 
-#Line by line:
+# Line by line:
 
 ```sql
 JOIN injuries ON ST_Within(injuries.geom, nyc_boro.geom)
@@ -1629,7 +1629,7 @@ JOIN injuries ON ST_Within(injuries.geom, nyc_boro.geom)
 
 ---
 
-#Line by line:
+# Line by line:
 
 ```sql
 GROUP BY nyc_boro.gid
@@ -1697,7 +1697,7 @@ GROUP BY polygons.unique_id
 # `ST_Within`
 
 ![img-center-40](images/st-within.gif)
-#####Source: https://www.ibm.com/support/knowledgecenter/SSGU8G_11.50.0/com.ibm.spatial.doc/relation1033234.htm%23relation1033234
+##### Source: https://www.ibm.com/support/knowledgecenter/SSGU8G_11.50.0/com.ibm.spatial.doc/relation1033234.htm%23relation1033234
 
 ---
 
@@ -1725,14 +1725,14 @@ GROUP BY polygons.unique_id
 
 ---
 
-#Your turn
+# Your turn
 + Use DB Manager and SQL to do a points in polygon join to count injuries in community districts (table `nyc_cd_4326`)
 + Add the results as a layer in QGIS
 + Style the community districts by the number of injuries
 
 ---
 
-#Putting it all together
+# Putting it all together
 + Filter DOT 311 requests by your borough and for a type
 + Join filtered requests to community districts in your borough
 + Create a choropleth of the number complaints in each CD
@@ -1742,15 +1742,15 @@ GROUP BY polygons.unique_id
 ---
 
 class:center,middle
-#10 Min Break
+# 10 Min Break
 
 ![img-center-50](https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/10475028_1632667213653494_1437967908_n.jpg)
 
-###Source: https://www.instagram.com/p/9stzddj8-Q/
+### Source: https://www.instagram.com/p/9stzddj8-Q/
 
 ---
 
-#Heatmaps
+# Heatmaps
 
 --
 
@@ -1761,21 +1761,21 @@ class:center,middle
 
 ---
 
-#Heatmaps
+# Heatmaps
 
 ![img-center-70](images/taxi_heatmap.png)
-####Source: https://www.mapbox.com/blog/nyc-taxi/
+#### Source: https://www.mapbox.com/blog/nyc-taxi/
 
 ---
 
-#Heatmaps
+# Heatmaps
 
 ![img-center-50](images/citibike_suggestions.png)
-####Source: http://a841-tfpweb.nyc.gov/bikeshare/2011/09/20/station-suggestion-recap/
+#### Source: http://a841-tfpweb.nyc.gov/bikeshare/2011/09/20/station-suggestion-recap/
 
 ---
 
-#Heatmaps in QGIS
+# Heatmaps in QGIS
 
 --
 
@@ -1789,31 +1789,31 @@ class:center,middle
 
 ---
 
-#Heatmaps in QGIS
+# Heatmaps in QGIS
 
 ![img-center-70](images/heatmap-menu.png)
 
 ---
 
-#Heatmaps in QGIS
+# Heatmaps in QGIS
 
 ![img-center-50](images/heatmap-dialog.png)
 
 ---
 
-#Heatmaps in QGIS
+# Heatmaps in QGIS
 
 ![img-center-100](images/heatmap-unstyled.png)
 
 ---
 
-#Heatmaps in QGIS
+# Heatmaps in QGIS
 
 ![img-center-80](images/heatmap-style.png)
 
 ---
 
-#Heatmaps in QGIS
+# Heatmaps in QGIS
 
 ![img-center-100](images/heatmap-styled.png)
 
@@ -1831,44 +1831,44 @@ class:center,middle
 ---
 
 class:center,middle
-#Presentations
+# Presentations
 
 ---
 
 class:center,middle
-#A few last things
+# A few last things
 
 ---
 
-#Data formats we've covered
+# Data formats we've covered
 + CSV
 
 ![img-center-80](images/csv_311_ex.png)
 
 ---
 
-#Data formats we've covered
+# Data formats we've covered
 + Shapefiles
 
 ![img-center-80](images/file_struct1.png)
 
 ---
 
-#Data formats we haven't covered
+# Data formats we haven't covered
 + JSON (used in online services)
 
 ![img-center-100](images/json.png)
 
 ---
 
-#Data formats we haven't covered
+# Data formats we haven't covered
 ![img-right-45](images/geojson_rev.png)
 + GeoJSON (used in online services with locations to be mapped)
 + For more information see Eric Brelsford's [GeoJSON and Github tutorial](http://youtu.be/TQs7fYo9d_M)
 
 ---
 
-#Data formats we haven't covered
+# Data formats we haven't covered
 + XML (Google Earth's native data format)
 
 ![img-center-100](images/xml.png)
@@ -1930,7 +1930,7 @@ class:center,middle
 
 ---
 
-#What We've Covered This Afternoon
+# What We've Covered This Afternoon
 --
 
 + Got started with using SQL to querying databases
@@ -1949,7 +1949,7 @@ class:center,middle
 
 ---
 
-#Feedback
+# Feedback
 + What of what we covered was helpful/interesting to you?
 + Were the problems we worked with similar to the ones you face?
 + What other skills/techniques/data do you have questions about?
@@ -1957,11 +1957,11 @@ class:center,middle
 ---
 
 class:center,middle
-#Resources
+# Resources
 
 ---
 
-#GIS Stack Exchange
+# GIS Stack Exchange
 
 ![img-center-90](images/gis-stackexchange.png)
 
@@ -1969,7 +1969,7 @@ class:center,middle
 
 ---
 
-#Learning QGIS
+# Learning QGIS
 
 ![img-center-40](images/learning-qgis.png)
 
@@ -1977,7 +1977,7 @@ class:center,middle
 
 ---
 
-#QGIS Map Design
+# QGIS Map Design
 
 ![img-center-40](images/qgis-map-design.png)
 
@@ -1985,7 +1985,7 @@ class:center,middle
 
 ---
 
-#PostGIS in Action
+# PostGIS in Action
 
 ![img-center-40](http://ecx.images-amazon.com/images/I/5172NoQsEcL._SX397_BO1,204,203,200_.jpg)
 
@@ -1993,28 +1993,28 @@ class:center,middle
 
 ---
 
-#The PostGIS Documentation
+# The PostGIS Documentation
 ![img](images/postgis_docs.png)
 
 http://postgis.net/documentation
 
 ---
 
-#The PostGIS Documentation
+# The PostGIS Documentation
 [![img](images/st_within_docs.png)](http://postgis.net/docs/ST_Within.html)
 
-###They're actually really helpful
+### They're actually really helpful
 
 ---
 
-#Other Documentation
+# Other Documentation
 + [QGIS online manual](http://docs.qgis.org/2.8/en/docs/)
 + [QGIS Tutorials and Tips](http://www.qgistutorials.com/en/index.html)
 + [Free and Open Source GIS Ramblings](https://anitagraser.com/)
 
 ---
 
-#Reminders
+# Reminders
 --
 
 + Know your layer projection
@@ -2042,7 +2042,7 @@ class:middle
 ---
 
 class:center,middle
-#Thank You
+# Thank You
 ##[Please take a moment to share your thoughts on this class](http://goo.gl/forms/X7XDbcpP3M)
 
 ---
@@ -2054,17 +2054,17 @@ https://www.instagram.com/sadtopographies/
 
 ---
 
-##Richard Dunks
+## Richard Dunks
 [![img-right-50](https://scontent-lga3-1.cdninstagram.com/l/t51.2885-15/e35/11260589_1537702966519640_1758757795_n.jpg)](https://scontent-lga3-1.cdninstagram.com/l/t51.2885-15/e35/11260589_1537702966519640_1758757795_n.jpg)
 + [richard@datapolitan.com](mailto:richard@datapolitan.com)
 + [@rdunks1](https://twitter.com/rdunks1)/[@datapolitan](https://twitter.com/Datapolitan)
 
 
-##Eric Brelsford
+## Eric Brelsford
 + [ebrelsford@gmail.com](mailto:ebrelsford@gmail.com)
 + [@ebrelsford](https://twitter.com/ebrelsford)
 
-##Clayton Hunter
+## Clayton Hunter
 
 
     </textarea>

@@ -18,3 +18,4 @@ participant_workbook*
 code/
 /data/
 Thumbs.db
+*.sublime*
